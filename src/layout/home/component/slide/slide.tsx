@@ -11,7 +11,9 @@ const Slide = () => {
             <span>Vista Alegre - Embu das Artes</span>
           </div>
 
-          <button className='bg-[#35160B] text-white rounded-4xl py-3 px-11'>Saiba mais</button>
+          <button className='bg-[#8A684B] text-white rounded-4xl py-3 px-11 cursor-pointer hover:bg-[#846449] hover:font-semibold'>
+            Saiba mais
+          </button>
         </div>
       </div>
 

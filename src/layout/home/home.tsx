@@ -36,7 +36,7 @@ const Home = () => {
 
         <div className='border-2 border-[#1C243F] rounded-[100px] w-2/4 mt-9'>
           <button
-            className={`rounded-[100px] py-4 w-1/2 text-2xl cursor-pointer ${
+            className={`rounded-[100px] py-4 w-1/2 text-xl cursor-pointer ${
               category === 'pronto' ? 'bg-[#1C243F] text-white font-bold' : 'bg-white text-[#1C243F]'
             }`}
             onClick={() => setCategory('pronto')}
@@ -44,7 +44,7 @@ const Home = () => {
             Prontos para morar
           </button>
           <button
-            className={`rounded-[100px] py-4 w-1/2 text-2xl cursor-pointer ${
+            className={`rounded-[100px] py-4 w-1/2 text-xl cursor-pointer ${
               category === 'construcao' ? 'bg-[#1C243F] text-white font-bold' : 'bg-white text-[#1C243F]'
             }`}
             onClick={() => setCategory('construcao')}

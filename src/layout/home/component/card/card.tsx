@@ -34,9 +34,9 @@ const Card = ({
         </div>
       </div>
 
-      <div className='flex flex-col items-center mt-3'>
+      <div className='flex flex-col items-center mt-3 px-10'>
         <h3 className='text-xl font-bold'>{name}</h3>
-        <p className='mt-2'>
+        <p className='mt-2 text-center relative'>
           <span>{address}</span>
         </p>
         <p className='mt-1'>
@@ -47,7 +47,7 @@ const Card = ({
       <hr className='border-t border-black my-4 w-[80%] mx-auto' />
 
       <div className='grid grid-cols-2 gap-2 px-9'>
-        <span>Comodos</span>
+        <span>Cômodos</span>
         <span className='text-right'>{rooms}</span>
         <span>Banheiros</span>
         <span className='text-right'>{bathrooms}</span>
@@ -58,7 +58,7 @@ const Card = ({
       </div>
 
       <div className='mb-8 mt-8 flex justify-center'>
-        <button className='bg-[#1C243F] text-white px-16 py-2 rounded-[64px] cursor-pointer hover:bg-[#0B0E1A]'>
+        <button className='bg-[#1C243F] text-white px-16 py-2 rounded-[64px] cursor-pointer hover:bg-[#0B0E1A] hover:font-semibold'>
           Saiba mais
         </button>
       </div>

@@ -8,7 +8,7 @@ const Header = () => {
       </div>
 
       <nav>
-        <ul className='uppercase text-white flex gap-9 *:hover:cursor-pointer'>
+        <ul className='uppercase text-white flex gap-9 *:hover:cursor-pointer *:hover:font-semibold'>
           <li>home</li>
           <li>sobre nós</li>
           <li>pronto para morar</li>
