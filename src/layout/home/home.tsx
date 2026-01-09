@@ -3,6 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useState } from 'react';
 import { Card, Slide } from './component';
+import { readyProperties, underConstructionProperties } from '../../model';
 
 const settings = {
   dots: true, // Mostra os pontos de navegação
@@ -31,20 +32,20 @@ const Home = () => {
       </div>
 
       <section className='flex flex-col justify-center items-center mt-11'>
-        <h2 className='text-[#1C243F]'>Conheça nossos imóveis</h2>
+        <h2 className='text-[#1C243F] font-bold text-4xl'>Conheça nossos imóveis</h2>
 
-        <div className='border-2 border-[#1C243F] rounded-[100px] w-2/4'>
+        <div className='border-2 border-[#1C243F] rounded-[100px] w-2/4 mt-9'>
           <button
-            className={`rounded-[100px] py-6 w-1/2 text-2xl ${
-              category === 'pronto' ? 'bg-[#1C243F] text-white' : 'bg-white text-[#1C243F]'
+            className={`rounded-[100px] py-4 w-1/2 text-2xl cursor-pointer ${
+              category === 'pronto' ? 'bg-[#1C243F] text-white font-bold' : 'bg-white text-[#1C243F]'
             }`}
             onClick={() => setCategory('pronto')}
           >
             Prontos para morar
           </button>
           <button
-            className={`rounded-[100px] py-6 w-1/2 text-2xl ${
-              category === 'construcao' ? 'bg-[#1C243F] text-white' : 'bg-white text-[#1C243F]'
+            className={`rounded-[100px] py-4 w-1/2 text-2xl cursor-pointer ${
+              category === 'construcao' ? 'bg-[#1C243F] text-white font-bold' : 'bg-white text-[#1C243F]'
             }`}
             onClick={() => setCategory('construcao')}
           >
@@ -52,8 +53,44 @@ const Home = () => {
           </button>
         </div>
 
-        <div className='grid grid-cols-3 gap-12 mt-11'>
-          <Card />
+        <div className='grid grid-cols-3 gap-12 mt-9'>
+          {category === 'pronto' && (
+            <>
+              {readyProperties.map((property, index) => (
+                <Card
+                  key={property.name + index}
+                  image={property.image}
+                  name={property.name}
+                  address={property.address}
+                  area={property.area}
+                  rooms={property.rooms}
+                  bathrooms={property.bathrooms}
+                  bedrooms={property.bedrooms}
+                  parkingSpaces={property.parkingSpaces}
+                  status={property.status}
+                />
+              ))}
+            </>
+          )}
+
+          {category === 'construcao' && (
+            <>
+              {underConstructionProperties.map((property, index) => (
+                <Card
+                  key={property.name + index}
+                  image={property.image}
+                  name={property.name}
+                  address={property.address}
+                  area={property.area}
+                  rooms={property.rooms}
+                  bathrooms={property.bathrooms}
+                  bedrooms={property.bedrooms}
+                  parkingSpaces={property.parkingSpaces}
+                  status={property.status}
+                />
+              ))}
+            </>
+          )}
         </div>
       </section>
     </div>

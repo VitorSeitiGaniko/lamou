@@ -17,10 +17,10 @@ const Header = () => {
       </nav>
 
       <div className='flex gap-3'>
-        <button className='py-2 px-4 border rounded-4xl text-[#1C243F] uppercase bg-white'>
+        <button className='py-2 px-4 border rounded-4xl text-[#1C243F] uppercase bg-white cursor-pointer hover:bg-[#EBEBEB]'>
           fale com corretor
         </button>
-        <button className='py-2 px-4 border rounded-4xl text-[#1C243F] uppercase bg-white'>
+        <button className='py-2 px-4 border rounded-4xl text-[#1C243F] uppercase cursor-pointer bg-white hover:bg-[#EBEBEB]'>
           fale conosco
         </button>
       </div>
