@@ -10,6 +10,8 @@ import Parking from './parking.svg';
 import Shower from './shower.svg';
 import Tv from './tv.svg';
 import Workspace from './workspace.svg';
+import Close from './close.svg';
+import Menu from './menu.svg';
 
 export {
   Instagram,
@@ -24,4 +26,6 @@ export {
   Shower,
   Tv,
   Workspace,
+  Close,
+  Menu,
 };

@@ -22,7 +22,7 @@ const Card = ({
   status,
 }: CardProps) => {
   return (
-    <div className='w-105 bg-white rounded-lg shadow-[4px_4px_24px_rgba(0,0,0,0.25)] overflow-hidden'>
+    <div className='lg:w-105 bg-white rounded-lg shadow-[4px_4px_24px_rgba(0,0,0,0.25)] overflow-hidden'>
       <div className='relative h-72'>
         <img src={image} alt={name} className='h-full w-full object-cover' />
         <div
