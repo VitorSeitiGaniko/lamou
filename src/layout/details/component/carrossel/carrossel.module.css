@@ -14,11 +14,15 @@
 }
 
 .carrossel-container :global(.slick-next:before) {
-  color: #1c243f !important;
+  @media (min-width: 768px) {
+    color: #1c243f !important;
+  }
 }
 
 .carrossel-container :global(.slick-prev:before) {
-  color: #1c243f !important;
+  @media (min-width: 768px) {
+    color: #1c243f !important;
+  }
 }
 
 .modal {

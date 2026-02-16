@@ -4,7 +4,7 @@ const Details = () => {
   return (
     <>
       <div className='w-screen flex flex-col gap-8'>
-        <Banner />
+        {/* <Banner /> */}
         <Nav />
         <About />
         <Carrossel />

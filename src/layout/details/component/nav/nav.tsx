@@ -8,7 +8,7 @@ const Nav = () => {
   }
 
   return (
-    <section className='px-24'>
+    <section className='px-24 hidden lg:block'>
       <nav>
         <ul className='flex gap-10 *:text-2xl *:cursor-pointer'>
           <li
