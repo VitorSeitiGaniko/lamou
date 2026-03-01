@@ -2,6 +2,10 @@
   transform: scale(0.8) !important;
   transition: all 0.4s ease-in-out !important;
   padding: 40px 0 !important;
+
+  @media (max-width: 768px) {
+    transform: scale(0.7) !important;
+  }
 }
 
 .carrossel-container :global(.slick-slide img) {
@@ -11,11 +15,27 @@
 
 .carrossel-container :global(.slick-center) {
   transform: scale(1.1) !important;
+
+  @media (max-width: 768px) {
+    transform: scale(1.2) !important;
+  }
+}
+
+.carrossel-container :global(.slick-next:before) {
+  @media (max-width: 768px) {
+    display: none !important;
+  }
 }
 
 .carrossel-container :global(.slick-next:before) {
   @media (min-width: 768px) {
     color: #1c243f !important;
+  }
+}
+
+.carrossel-container :global(.slick-prev:before) {
+  @media (max-width: 768px) {
+    display: none !important;
   }
 }
 

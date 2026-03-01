@@ -3,10 +3,13 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Slide } from './components/slide';
-import styles from './carrossel.module.css'; // Importa o CSS Module
-import { Banner01 } from '../../../../assets';
+import styles from './carrossel.module.css';
 
-const Carrossel = () => {
+interface CarrosselProps {
+  images: string[];
+}
+
+const Carrossel = ({ images }: CarrosselProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState('');
 
@@ -19,6 +22,14 @@ const Carrossel = () => {
     speed: 500,
     dots: true,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   };
 
   const handleImageClick = (image: string) => {
@@ -32,31 +43,17 @@ const Carrossel = () => {
   };
 
   return (
-    <section className='py-8'>
+    <section id='images' className='py-8'>
       <h1 className='text-2xl font-bold text-center mb-8'>Explore cada detalhe do seu futuro lar</h1>
       <div className={styles['carrossel-container']}>
         <Slider {...settings}>
-          <div onClick={() => handleImageClick(Banner01)}>
-            <Slide image={Banner01} />
-          </div>
-          <div onClick={() => handleImageClick(Banner01)}>
-            <Slide image={Banner01} />
-          </div>
-          <div onClick={() => handleImageClick(Banner01)}>
-            <Slide image={Banner01} />
-          </div>
-          <div onClick={() => handleImageClick(Banner01)}>
-            <Slide image={Banner01} />
-          </div>
-          <div onClick={() => handleImageClick(Banner01)}>
-            <Slide image={Banner01} />
-          </div>
-          <div onClick={() => handleImageClick(Banner01)}>
-            <Slide image={Banner01} />
-          </div>
+          {images.map((image, index) => (
+            <div key={index} onClick={() => handleImageClick(image)}>
+              <Slide image={image} />
+            </div>
+          ))}
         </Slider>
 
-        {/* Modal */}
         {isModalOpen && (
           <div className={styles['modal']} onClick={closeModal}>
             <img src={currentImage} alt='Expanded' className={styles['modal-image']} />

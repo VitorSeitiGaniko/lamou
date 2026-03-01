@@ -9,20 +9,36 @@ import {
   Workspace,
 } from '../../../../assets';
 
-const About = () => {
+interface Tag {
+  area: string;
+  bathroom: string;
+  bedrooms: string;
+  garage: string;
+  kitchen: string;
+  living_room: string;
+  lote: string;
+  orientation: string;
+  rooms: string;
+  type: string;
+}
+interface AboutProps {
+  text: string[];
+  tags: Tag;
+}
+
+const About = ({ text, tags }: AboutProps) => {
   return (
     <>
-      <section className='hidden py-8 px-24 lg:flex flex-col gap-8'>
+      <section id='about' className='hidden py-8 px-24 lg:flex flex-col gap-8'>
         <h1 className='text-2xl font-bold'>Sobre o Empreendimento</h1>
         <div className='flex justify-between'>
-          <p className='w-4/5'>
-            <span>Conforto, segurança e qualidade de vida em uma das regiões mais tranquilas da cidade</span>
-            <span>
-              Se você procura sempre o melhor para a sua família, o Residencial Elizabeth é perfeito para
-              você! Condomínio com lazer completo e apartamentos de 2 dormitórios com varanda, 47 a 48m², com
-              fácil acesso à Rodovia Régis Bittencourt, no melhor de Taboão da Serra.
-            </span>
-          </p>
+          <div className='w-4/5'>
+            {text.map((paragraph, index) => (
+              <p key={index} className='my-2'>
+                {paragraph}
+              </p>
+            ))}
+          </div>
 
           <button className='bg-[#1C243F] h-2/4 text-white text-xl px-4 py-2 rounded-[64px] cursor-pointer hover:bg-[#0B0E1A] hover:font-semibold'>
             Fale com um corretor
@@ -35,7 +51,7 @@ const About = () => {
               <img src={Apartment} alt='Apartment' />
               <p className='text-black tex-xl'>
                 <span>Tipo:</span>
-                <span className='font-bold ml-1'>Residencial</span>
+                <span className='font-bold ml-1'>{tags.type}</span>
               </p>
             </div>
 
@@ -43,7 +59,7 @@ const About = () => {
               <img src={Workspace} alt='Workspace' />
               <p className='text-black tex-xl'>
                 <span>Quartos:</span>
-                <span className='font-bold ml-1'>2</span>
+                <span className='font-bold ml-1'>{tags.bedrooms}</span>
               </p>
             </div>
 
@@ -51,7 +67,7 @@ const About = () => {
               <img src={FullScreen} alt='FullScreen' />
               <p className='text-black tex-xl'>
                 <span>Tamanho do lote:</span>
-                <span className='font-bold ml-1'>28x20x20</span>
+                <span className='font-bold ml-1'>{tags.lote}</span>
               </p>
             </div>
 
@@ -59,7 +75,7 @@ const About = () => {
               <img src={LocationMarker} alt='LocationMarker' />
               <p className='text-black tex-xl'>
                 <span>Orientação:</span>
-                <span className='font-bold ml-1'>Oeste</span>
+                <span className='font-bold ml-1'>{tags.orientation}</span>
               </p>
             </div>
 
@@ -67,7 +83,7 @@ const About = () => {
               <img src={Kitchen} alt='Kitchen' />
               <p className='text-black tex-xl'>
                 <span>Cozinhas:</span>
-                <span className='font-bold ml-1'>1</span>
+                <span className='font-bold ml-1'>{tags.kitchen}</span>
               </p>
             </div>
           </div>
@@ -77,7 +93,7 @@ const About = () => {
               <img src={Parking} alt='Parking' />
               <p className='text-black tex-xl'>
                 <span>Vagas:</span>
-                <span className='font-bold ml-1'>1</span>
+                <span className='font-bold ml-1'>{tags.garage}</span>
               </p>
             </div>
 
@@ -85,7 +101,7 @@ const About = () => {
               <img src={Shower} alt='Shower' />
               <p className='text-black tex-xl'>
                 <span>Banheiros:</span>
-                <span className='font-bold ml-1'>1</span>
+                <span className='font-bold ml-1'>{tags.bathroom}</span>
               </p>
             </div>
 
@@ -93,7 +109,7 @@ const About = () => {
               <img src={FullScreen} alt='FullScreen' />
               <p className='text-black tex-xl'>
                 <span>Tamanho da área:</span>
-                <span className='font-bold ml-1'>50m2 e 52m2</span>
+                <span className='font-bold ml-1'>{tags.area}</span>
               </p>
             </div>
 
@@ -101,7 +117,7 @@ const About = () => {
               <img src={Tv} alt='Tv' />
               <p className='text-black tex-xl'>
                 <span>Salas:</span>
-                <span className='font-bold ml-1'>2</span>
+                <span className='font-bold ml-1'>{tags.living_room}</span>
               </p>
             </div>
 
@@ -109,7 +125,7 @@ const About = () => {
               <img src={Apartment} alt='Apartment' />
               <p className='text-black tex-xl'>
                 <span>Cômodos:</span>
-                <span className='font-bold ml-1'>4</span>
+                <span className='font-bold ml-1'>{tags.rooms}</span>
               </p>
             </div>
           </div>
@@ -118,21 +134,16 @@ const About = () => {
 
       <section className='py-8 px-5 flex-col gap-8 lg:hidden'>
         <h1 className='text-2xl font-bold'>Sobre o Empreendimento</h1>
-        <p>
-          <span>Conforto, segurança e qualidade de vida em uma das regiões mais tranquilas da cidade</span>
-          <span>
-            Se você procura sempre o melhor para a sua família, o Residencial Elizabeth é perfeito para você!
-            Condomínio com lazer completo e apartamentos de 2 dormitórios com varanda, 47 a 48m², com fácil
-            acesso à Rodovia Régis Bittencourt, no melhor de Taboão da Serra.
-          </span>
-        </p>
+        {text.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
 
         <div className='flex flex-col gap-5'>
           <div className='flex gap-4 items-center'>
             <img src={Apartment} alt='Apartment' />
             <p className='text-black tex-xl'>
               <span>Tipo:</span>
-              <span className='font-bold ml-1'>Residencial</span>
+              <span className='font-bold ml-1'>{tags.type}</span>
             </p>
           </div>
 
@@ -140,7 +151,7 @@ const About = () => {
             <img src={Workspace} alt='Workspace' />
             <p className='text-black tex-xl'>
               <span>Quartos:</span>
-              <span className='font-bold ml-1'>2</span>
+              <span className='font-bold ml-1'>{tags.bedrooms}</span>
             </p>
           </div>
 
@@ -148,7 +159,7 @@ const About = () => {
             <img src={FullScreen} alt='FullScreen' />
             <p className='text-black tex-xl'>
               <span>Tamanho do lote:</span>
-              <span className='font-bold ml-1'>28x20x20</span>
+              <span className='font-bold ml-1'>{tags.lote}</span>
             </p>
           </div>
 
@@ -156,7 +167,7 @@ const About = () => {
             <img src={LocationMarker} alt='LocationMarker' />
             <p className='text-black tex-xl'>
               <span>Orientação:</span>
-              <span className='font-bold ml-1'>Oeste</span>
+              <span className='font-bold ml-1'>{tags.orientation}</span>
             </p>
           </div>
 
@@ -164,7 +175,7 @@ const About = () => {
             <img src={Kitchen} alt='Kitchen' />
             <p className='text-black tex-xl'>
               <span>Cozinhas:</span>
-              <span className='font-bold ml-1'>1</span>
+              <span className='font-bold ml-1'>{tags.kitchen}</span>
             </p>
           </div>
 
@@ -172,7 +183,7 @@ const About = () => {
             <img src={Parking} alt='Parking' />
             <p className='text-black tex-xl'>
               <span>Vagas:</span>
-              <span className='font-bold ml-1'>1</span>
+              <span className='font-bold ml-1'>{tags.garage}</span>
             </p>
           </div>
 
@@ -180,7 +191,7 @@ const About = () => {
             <img src={Shower} alt='Shower' />
             <p className='text-black tex-xl'>
               <span>Banheiros:</span>
-              <span className='font-bold ml-1'>1</span>
+              <span className='font-bold ml-1'>{tags.bathroom}</span>
             </p>
           </div>
 
@@ -188,7 +199,7 @@ const About = () => {
             <img src={FullScreen} alt='FullScreen' />
             <p className='text-black tex-xl'>
               <span>Tamanho da área:</span>
-              <span className='font-bold ml-1'>50m2 e 52m2</span>
+              <span className='font-bold ml-1'>{tags.area}</span>
             </p>
           </div>
 
@@ -196,7 +207,7 @@ const About = () => {
             <img src={Tv} alt='Tv' />
             <p className='text-black tex-xl'>
               <span>Salas:</span>
-              <span className='font-bold ml-1'>2</span>
+              <span className='font-bold ml-1'>{tags.living_room}</span>
             </p>
           </div>
 
@@ -204,7 +215,7 @@ const About = () => {
             <img src={Apartment} alt='Apartment' />
             <p className='text-black tex-xl'>
               <span>Cômodos:</span>
-              <span className='font-bold ml-1'>4</span>
+              <span className='font-bold ml-1'>{tags.rooms}</span>
             </p>
           </div>
         </div>

@@ -15,31 +15,31 @@ const Nav = () => {
             className={`py-2 ${link === 'sobre' ? 'font-bold border-b-4' : ''}`}
             onClick={() => handleClick('sobre')}
           >
-            Sobre o imóvel
+            <a href='#about'>Sobre o imóvel</a>
           </li>
           <li
             className={`py-2 ${link === 'imagens' ? 'font-bold border-b-4' : ''}`}
             onClick={() => handleClick('imagens')}
           >
-            Imagens
+            <a href='#images'>Imagens</a>
           </li>
           <li
             className={`py-2 ${link === 'planta' ? 'font-bold border-b-4' : ''}`}
             onClick={() => handleClick('planta')}
           >
-            Planta
+            <a href='#plant'>Planta</a>
           </li>
           <li
             className={`py-2 ${link === 'beneficios' ? 'font-bold border-b-4' : ''}`}
             onClick={() => handleClick('beneficios')}
           >
-            Benefícios
+            <a href='#benefities'>Benefícios</a>
           </li>
           <li
             className={`py-2 ${link === 'localizacao' ? 'font-bold border-b-4' : ''}`}
             onClick={() => handleClick('localizacao')}
           >
-            Localização
+            <a href='#location'>Localização</a>
           </li>
         </ul>
       </nav>

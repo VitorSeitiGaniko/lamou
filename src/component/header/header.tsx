@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Close, Logo, Menu } from '../../assets';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -7,15 +8,25 @@ const Header = () => {
   return (
     <header className='fixed top-0 w-screen h-24 flex bg-[#1C243F] items-center justify-between px-4 lg:px-16 z-20'>
       <div>
-        <img src={Logo} />
+        <NavLink to='/'>
+          <img src={Logo} />
+        </NavLink>
       </div>
 
       <nav className='hidden lg:block'>
         <ul className='uppercase text-white flex gap-9 *:hover:cursor-pointer *:hover:font-semibold'>
-          <li>home</li>
-          <li>sobre nós</li>
-          <li>pronto para Morar</li>
-          <li>em construção</li>
+          <li>
+            <NavLink to='/'>home</NavLink>
+          </li>
+          <li>
+            <NavLink to='/'>sobre nós</NavLink>
+          </li>
+          <li>
+            <NavLink to='/'>pronto para Morar</NavLink>
+          </li>
+          <li>
+            <NavLink to='/'>em construção</NavLink>
+          </li>
         </ul>
       </nav>
 
@@ -25,10 +36,18 @@ const Header = () => {
         </i>
         <div className='fixed inset-0 bg-black/60 backdrop-blur-md overflow-y-hidden'></div>
         <ul className='uppercase z-50 absolute divide-y-2 divide-white/10 text-white flex flex-col justify-center w-full *:hover:cursor-pointer *:hover:font-semibold'>
-          <li className='py-3 pl-4 lg:py-0 hover:bg-white/10'>home</li>
-          <li className='py-3 pl-4 lg:py-0 hover:bg-white/10'>sobre nós</li>
-          <li className='py-3 pl-4 lg:py-0 hover:bg-white/10'>pronto para Morar</li>
-          <li className='py-3 pl-4 lg:py-0 hover:bg-white/10'>em construção</li>
+          <li className='py-3 pl-4 lg:py-0 hover:bg-white/10'>
+            <NavLink to='/'>home</NavLink>
+          </li>
+          <li className='py-3 pl-4 lg:py-0 hover:bg-white/10'>
+            <NavLink to='/'>sobre nós</NavLink>
+          </li>
+          <li className='py-3 pl-4 lg:py-0 hover:bg-white/10'>
+            <NavLink to='/'>pronto para Morar</NavLink>
+          </li>
+          <li className='py-3 pl-4 lg:py-0 hover:bg-white/10'>
+            <NavLink to='/'>em construção</NavLink>
+          </li>
         </ul>
       </nav>
 

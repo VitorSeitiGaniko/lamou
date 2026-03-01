@@ -1,13 +1,21 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { Footer, Header } from './component';
-import { DetailsPage, HomePage } from './page';
+import { DetailsPage, HomePage, MaterialUI } from './page';
 
 function App() {
   return (
     <>
-      <Header />
-      <DetailsPage />
-      <Footer />
+      <BrowserRouter basename='/lamou'>
+        <Header />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/details/:id' element={<DetailsPage />} />
+          <Route path='/material' element={<MaterialUI />} />
+        </Routes>
+
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }

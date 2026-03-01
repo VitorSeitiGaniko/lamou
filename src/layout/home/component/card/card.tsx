@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 interface CardProps {
   image?: string;
   name: string;
@@ -59,7 +61,7 @@ const Card = ({
 
       <div className='mb-8 mt-8 flex justify-center'>
         <button className='bg-[#1C243F] text-white px-16 py-2 rounded-[64px] cursor-pointer hover:bg-[#0B0E1A] hover:font-semibold'>
-          Saiba mais
+          <NavLink to={`/details/${name.toLowerCase().replace(/\s/g, '_')}`}>Saiba mais</NavLink>
         </button>
       </div>
     </div>
