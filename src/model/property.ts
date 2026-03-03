@@ -7,6 +7,40 @@ import {
   ResidencialElisabeteI,
   ResidencialVistaAlegreII,
   StudioVertentes,
+  GranjaResidencialPlanta02,
+  GranjaResidencialPlanta01,
+  GranjaResidencial01,
+  GranjaResidencial08,
+  GranjaResidencial07,
+  GranjaResidencial06,
+  GranjaResidencial05,
+  GranjaResidencial04,
+  GranjaResidencial03,
+  GranjaResidencial02,
+  StudioVertentesPlanta01,
+  StudioVertentesPlanta02,
+  StudioVertentes01,
+  StudioVertentes02,
+  StudioVertentes03,
+  StudioVertentes04,
+  StudioVertentes05,
+  StudioVertentes06,
+  StudioVertentes07,
+  StudioVertentes08,
+  StudioVertentes09,
+  StudioVertentes10,
+  StudioVertentes11,
+  StudioVertentes12,
+  StudioVertentes13,
+  ResidencialElisabeteIPlanta02,
+  ResidencialElisabeteIPlanta01,
+  ResidencialElisabeteI01,
+  ResidencialElisabeteI02,
+  ResidencialElisabeteI03,
+  ResidencialElisabeteI04,
+  ResidencialElisabeteI05,
+  ResidencialElisabeteI06,
+  ResidencialElisabeteI07,
 } from '../assets';
 
 const readyProperties = [
@@ -69,7 +103,7 @@ const underConstructionProperties = [
   },
   {
     image: ResidencialElisabeteI,
-    name: 'Residencial Elizabeth',
+    name: 'Residencial Elizabete I',
     address: 'Rua Manoel Maria Fernandes, 330',
     area: '47m2 e 48m2',
     rooms: 0,
@@ -80,7 +114,7 @@ const underConstructionProperties = [
   },
   {
     image: ResidencialElisabeteI,
-    name: 'Residencial Elizabeth',
+    name: 'Residencial Elizabete II',
     address: 'Rua Manoel Maria Fernandes, 330',
     area: '47m2 e 48m2',
     rooms: 0,
@@ -365,10 +399,10 @@ const residencial_vista_alegre_ii = {
   `,
 };
 
-const residencial_elizabeth = {
+const residencial_elizabete_i = {
   banner: {
     image: ResidencialElisabeteI,
-    name: 'Residencial Elizabeth',
+    name: 'Residencial Elizabete I',
     description:
       'Viva a poucos passos do metrô em um projeto que une design moderno, lazer completo e a conveniência de ter tudo por perto.',
     localization: 'Taboão da Serra',
@@ -376,7 +410,7 @@ const residencial_elizabeth = {
   },
 
   about: [
-    'Se você procura sempre o melhor para a sua família, o Residencial Elizabeth é perfeito para você! Condomínio com lazer completo e apartamentos de 2 dormitórios com varanda, 47 a 48m², com fácil acesso à Rodovia Régis Bittencourt, no melhor de Taboão da Serra.',
+    'Se você procura sempre o melhor para a sua família, o Residencial Elizabete I é perfeito para você! Condomínio com lazer completo e apartamentos de 2 dormitórios com varanda, 47 a 48m², com fácil acesso à Rodovia Régis Bittencourt, no melhor de Taboão da Serra.',
   ],
 
   tags: {
@@ -392,9 +426,71 @@ const residencial_elizabeth = {
     type: 'Apartamento',
   },
 
-  images: [ResidencialElisabeteI],
+  images: [
+    ResidencialElisabeteI,
+    ResidencialElisabeteI01,
+    ResidencialElisabeteI02,
+    ResidencialElisabeteI03,
+    ResidencialElisabeteI04,
+    ResidencialElisabeteI05,
+    ResidencialElisabeteI06,
+    ResidencialElisabeteI07,
+  ],
 
-  plant: [],
+  plant: [ResidencialElisabeteIPlanta01, ResidencialElisabeteIPlanta02],
+
+  benefities: ['Churrasqueira', 'Fitness', 'Jardim', 'Playground', 'Salão de Festas', 'Piscina'],
+
+  map: `
+    <iframe
+      src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.506368504506!2d-46.81102565979243!3d-23.622030163913234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce55a1cf5c9495%3A0x2d442029f4dab035!2sR.%20Manoel%20Maria%20Fernandes%2C%20330%20-%20Jardim%20Elizabete%2C%20Tabo%C3%A3o%20da%20Serra%20-%20SP%2C%2006786-300!5e0!3m2!1spt-BR!2sbr!4v1772402001353!5m2!1spt-BR!2sbr'
+      allowFullScreen={true}
+      loading='lazy'
+      referrerPolicy='no-referrer-when-downgrade'
+      style="width: 100%; height: 100%;"
+    ></iframe>
+  `,
+};
+
+const residencial_elizabete_ii = {
+  banner: {
+    image: ResidencialElisabeteI,
+    name: 'Residencial Elizabete II',
+    description:
+      'Viva a poucos passos do metrô em um projeto que une design moderno, lazer completo e a conveniência de ter tudo por perto.',
+    localization: 'Taboão da Serra',
+    status: 'Pronto para morar',
+  },
+
+  about: [
+    'Se você procura sempre o melhor para a sua família, o Residencial Elizabete II é perfeito para você! Condomínio com lazer completo e apartamentos de 2 dormitórios com varanda, 47 a 48m², com fácil acesso à Rodovia Régis Bittencourt, no melhor de Taboão da Serra.',
+  ],
+
+  tags: {
+    area: '46m²',
+    bathroom: '1',
+    bedrooms: '2',
+    garage: '1',
+    kitchen: '1',
+    living_room: '1',
+    lote: '46m²',
+    orientation: 'Sul',
+    rooms: '4',
+    type: 'Apartamento',
+  },
+
+  images: [
+    ResidencialElisabeteI,
+    ResidencialElisabeteI01,
+    ResidencialElisabeteI02,
+    ResidencialElisabeteI03,
+    ResidencialElisabeteI04,
+    ResidencialElisabeteI05,
+    ResidencialElisabeteI06,
+    ResidencialElisabeteI07,
+  ],
+
+  plant: [ResidencialElisabeteIPlanta01, ResidencialElisabeteIPlanta02],
 
   benefities: ['Churrasqueira', 'Fitness', 'Jardim', 'Playground', 'Salão de Festas', 'Piscina'],
 
@@ -438,9 +534,19 @@ const granja_residencial = {
     type: 'Apartamento',
   },
 
-  images: [GranjaResidencial],
+  images: [
+    GranjaResidencial,
+    GranjaResidencial01,
+    GranjaResidencial02,
+    GranjaResidencial03,
+    GranjaResidencial04,
+    GranjaResidencial05,
+    GranjaResidencial06,
+    GranjaResidencial07,
+    GranjaResidencial08,
+  ],
 
-  plant: [],
+  plant: [GranjaResidencialPlanta01, GranjaResidencialPlanta02],
 
   benefities: [
     'Churrasqueira Gourmet',
@@ -466,8 +572,7 @@ const studio_vertentes = {
   banner: {
     image: StudioVertentes,
     name: 'Studio Vertentes',
-    description:
-      'Viva a poucos passos do metrô em um projeto que une design moderno, lazer completo e a conveniência de ter tudo por perto.',
+    description: 'Invista ou more em uma das regiões que mais crescem na Zona Oeste de São Paulo.',
     localization: 'Butantã',
     status: 'Pronto para morar',
   },
@@ -489,9 +594,24 @@ const studio_vertentes = {
     type: 'Apartamento',
   },
 
-  images: [StudioVertentes],
+  images: [
+    StudioVertentes,
+    StudioVertentes01,
+    StudioVertentes02,
+    StudioVertentes03,
+    StudioVertentes04,
+    StudioVertentes05,
+    StudioVertentes06,
+    StudioVertentes07,
+    StudioVertentes08,
+    StudioVertentes09,
+    StudioVertentes10,
+    StudioVertentes11,
+    StudioVertentes12,
+    StudioVertentes13,
+  ],
 
-  plant: [],
+  plant: [StudioVertentesPlanta01, StudioVertentesPlanta02],
 
   benefities: [
     'Churrasqueira',
@@ -523,7 +643,8 @@ const details = {
   park_395: park_395,
   residencial_paineiras: residencial_paineiras,
   residencial_vista_alegre_ii: residencial_vista_alegre_ii,
-  residencial_elizabeth: residencial_elizabeth,
+  residencial_elizabete_i: residencial_elizabete_i,
+  residencial_elizabete_ii: residencial_elizabete_ii,
   granja_residencial: granja_residencial,
   studio_vertentes: studio_vertentes,
 };

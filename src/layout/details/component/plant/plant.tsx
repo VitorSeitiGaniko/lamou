@@ -1,5 +1,3 @@
-import { Banner01Planta } from '../../../../assets';
-
 interface PlantProps {
   plant: string[];
 }
@@ -12,8 +10,9 @@ const Plant = ({ plant }: PlantProps) => {
           <h1 className='text-2xl font-bold text-center'>Plantas</h1>
 
           <div className='flex flex-col lg:flex-row justify-center gap-28 mt-16'>
-            <img src={Banner01Planta} alt='Planta' className='w-115' />
-            <img src={Banner01Planta} alt='Planta' className='w-115' />
+            {plant.map((image, index) => (
+              <img key={index} src={image} alt={`Planta ${index + 1}`} className='w-115' />
+            ))}
           </div>
         </section>
       )}
