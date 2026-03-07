@@ -12,6 +12,7 @@ import Tv from './tv.svg';
 import Workspace from './workspace.svg';
 import Close from './close.svg';
 import Menu from './menu.svg';
+import WhatsAppNav from './whatsapp_nav.svg';
 
 export {
   Instagram,
@@ -28,4 +29,5 @@ export {
   Workspace,
   Close,
   Menu,
+  WhatsAppNav,
 };

@@ -13,12 +13,14 @@ const Banner = ({ image, name, description, localization, status }: BannerProps)
         <img
           src={image}
           alt='Banner'
-          className='w-full h-full opacity-62 object-cover object-[center_bottom]'
+          className='w-full h-full opacity-90 object-cover object-[center_bottom]'
         />
 
         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white px-4'>
-          <h1 className='text-black font-bold text-4xl'>{name}</h1>
-          <p className='text-black text-xl'>{description}</p>
+          <div className='bg-white/60 glass-effect px-12 py-3 rounded-[42px] w-fit mx-auto'>
+            <h1 className='text-black font-bold text-4xl w-fit'>{name}</h1>
+          </div>
+          <p className='text-black font-medium text-xl'>{description}</p>
 
           <div className='flex justify-between mt-16'>
             <div className='bg-black/60 glass-effect px-12 py-3 rounded-[42px]'>
@@ -33,11 +35,13 @@ const Banner = ({ image, name, description, localization, status }: BannerProps)
       </div>
 
       <div className='lg:hidden relative h-full'>
-        <img src={image} className='w-full h-full object-cover object-[25%_75%] opacity-62' alt='' />
+        <img src={image} className='w-full h-full object-cover object-[25%_75%] opacity-90' alt='' />
 
         <div className='absolute top-5 text-center text-white px-8'>
-          <h1 className='text-black font-bold text-xl lg:text-4xl'>{name}</h1>
-          <p className='text-black text-base mt-2 lg:text-xl'>{description}</p>
+          <div className='bg-white/60 glass-effect px-12 py-3 rounded-[42px] w-fit mx-auto'>
+            <h1 className='text-black font-bold text-xl lg:text-4xl w-fit'>{name}</h1>
+          </div>
+          <p className='text-black font-medium text-base mt-2 lg:text-xl'>{description}</p>
         </div>
 
         <div className='absolute bottom-5 text-white px-8 w-full'>

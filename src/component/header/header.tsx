@@ -53,7 +53,7 @@ const Header = () => {
 
       <div className='hidden lg:flex gap-3'>
         <button className='py-2 px-4 border rounded-4xl text-[#1C243F] uppercase bg-white cursor-pointer hover:bg-[#EBEBEB]'>
-          fale com corretor
+          fale com um corretor
         </button>
         <button className='py-2 px-4 border rounded-4xl text-[#1C243F] uppercase cursor-pointer bg-white hover:bg-[#EBEBEB]'>
           fale conosco
