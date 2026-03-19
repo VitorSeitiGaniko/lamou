@@ -44,6 +44,13 @@ import ResidencialElisabeteI04 from './Residencial Jd Elisabete I - 04.jpg';
 import ResidencialElisabeteI05 from './Residencial Jd Elisabete I - 05.jpg';
 import ResidencialElisabeteI06 from './Residencial Jd Elisabete I - 06.jpg';
 import ResidencialElisabeteI07 from './Residencial Jd Elisabete I - 07.jpg';
+import ResidencialVistaAlegreIII from './Residencial Vista Alegre III.jpg';
+import ResidencialVistaAlegreIII01 from './Residencial Vista Alegre III - 01.jpg';
+import ResidencialVistaAlegreIII02 from './Residencial Vista Alegre III - 02.jpg';
+import ResidencialVistaAlegreIII03 from './Residencial Vista Alegre III - 03.jpg';
+import ResidencialVistaAlegreIII04 from './Residencial Vista Alegre III - 04.jpg';
+import ResidencialVistaAlegreIIIPlanta01 from './Residencial Vista Alegre III - Planta 01.jpg';
+import ResidencialVistaAlegreIIIPlanta02 from './Residencial Vista Alegre III - Planta 02.jpg';
 
 export {
   Logo,
@@ -92,4 +99,11 @@ export {
   ResidencialElisabeteI05,
   ResidencialElisabeteI06,
   ResidencialElisabeteI07,
+  ResidencialVistaAlegreIII,
+  ResidencialVistaAlegreIII01,
+  ResidencialVistaAlegreIII02,
+  ResidencialVistaAlegreIII03,
+  ResidencialVistaAlegreIII04,
+  ResidencialVistaAlegreIIIPlanta01,
+  ResidencialVistaAlegreIIIPlanta02,
 };

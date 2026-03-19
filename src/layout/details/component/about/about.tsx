@@ -34,9 +34,7 @@ const About = ({ text, tags }: AboutProps) => {
         <div className='flex justify-between'>
           <div className='w-4/5'>
             {text.map((paragraph, index) => (
-              <p key={index} className='my-2'>
-                {paragraph}
-              </p>
+              <p key={index} className='my-2' dangerouslySetInnerHTML={{ __html: paragraph }} />
             ))}
           </div>
 
@@ -135,7 +133,7 @@ const About = ({ text, tags }: AboutProps) => {
       <section className='py-8 px-5 flex-col gap-8 lg:hidden'>
         <h1 className='text-2xl font-bold'>Sobre o Empreendimento</h1>
         {text.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+          <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
         ))}
 
         <div className='flex flex-col gap-5'>

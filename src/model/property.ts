@@ -41,6 +41,13 @@ import {
   ResidencialElisabeteI05,
   ResidencialElisabeteI06,
   ResidencialElisabeteI07,
+  ResidencialVistaAlegreIII,
+  ResidencialVistaAlegreIII01,
+  ResidencialVistaAlegreIII02,
+  ResidencialVistaAlegreIII03,
+  ResidencialVistaAlegreIII04,
+  ResidencialVistaAlegreIIIPlanta01,
+  ResidencialVistaAlegreIIIPlanta02,
 } from '../assets';
 
 const readyProperties = [
@@ -94,7 +101,7 @@ const underConstructionProperties = [
     image: ResidencialVistaAlegreII,
     name: 'Residencial Vista Alegre II',
     address: 'R​​​​ua Alberto Correa Francfort, ​44 - ​Embu das Artes - São Paulo, SP',
-    area: '50m2 e 52m2',
+    area: '50m² e 52m²',
     rooms: 0,
     bathrooms: 0,
     bedrooms: 0,
@@ -102,10 +109,21 @@ const underConstructionProperties = [
     status: 'under_construction',
   },
   {
+    image: ResidencialVistaAlegreII,
+    name: 'Residencial Vista Alegre III',
+    address: 'R​​​​ua Alberto Correa Francfort, ​59 - ​Embu das Artes - São Paulo, SP',
+    area: '50m²',
+    rooms: 3,
+    bathrooms: 1,
+    bedrooms: 2,
+    parkingSpaces: 1,
+    status: 'under_construction',
+  },
+  {
     image: ResidencialElisabeteI,
     name: 'Residencial Elizabete I',
     address: 'Rua Manoel Maria Fernandes, 330',
-    area: '47m2 e 48m2',
+    area: '47m² e 48m²',
     rooms: 0,
     bathrooms: 0,
     bedrooms: 0,
@@ -116,18 +134,18 @@ const underConstructionProperties = [
     image: ResidencialElisabeteI,
     name: 'Residencial Elizabete II',
     address: 'Rua Manoel Maria Fernandes, 330',
-    area: '47m2 e 48m2',
-    rooms: 0,
-    bathrooms: 0,
-    bedrooms: 0,
-    parkingSpaces: 0,
+    area: '50m²',
+    rooms: 3,
+    bathrooms: 1,
+    bedrooms: 2,
+    parkingSpaces: 1,
     status: 'under_construction',
   },
   {
     image: GranjaResidencial,
     name: 'Granja Residencial',
     address: 'Estrada da Aldeia, 7509 - Granja Viana - SP',
-    area: '57m2 e 61m2',
+    area: '57m² e 61m²',
     rooms: 0,
     bathrooms: 0,
     bedrooms: 0,
@@ -138,11 +156,11 @@ const underConstructionProperties = [
     image: StudioVertentes,
     name: 'Studio Vertentes',
     address: 'R. Benedito Branco de Abreu, 12',
-    area: '23m2',
-    rooms: 0,
-    bathrooms: 0,
-    bedrooms: 0,
-    parkingSpaces: 0,
+    area: '24m²',
+    rooms: 1,
+    bathrooms: 1,
+    bedrooms: 1,
+    parkingSpaces: '0 (a parte)',
     status: 'under_construction',
   },
 ];
@@ -399,6 +417,88 @@ const residencial_vista_alegre_ii = {
   `,
 };
 
+const residencial_vista_alegre_iii = {
+  banner: {
+    image: ResidencialVistaAlegreIII,
+    name: 'Residencial Vista Alegre III',
+    description:
+      'Viva a poucos passos do metrô em um projeto que une design moderno, lazer completo e a conveniência de ter tudo por perto.',
+    localization: 'Embu das Artes',
+    status: 'Pronto para morar',
+  },
+
+  about: [
+    'O lugar ideal para começar a sua nova vida.',
+    'Unidades disponíveis em Embu das Artes.',
+    'O  Condomínio Residencial Vista Alegre III oferece tudo o que você precisa para viver com conforto, segurança e tranquilidade.',
+    `<ul class="my-5">
+      <li>✔ Condomínio fechado</li>
+      <li>✔ Portaria 24 horas</li>
+      <li>✔ Segurança para sua família</li>
+      <li>✔ Piscina</li>
+      <li>✔ Salão de festas com churrasqueira</li>
+      <li>✔ Brinquedoteca</li>
+      <li>✔ Academia</li>
+      <li>✔ Salão de jogos</li>
+    </ul>
+    `,
+    'Aqui seus filhos brincam com segurança e você vive com mais tranquilidade.',
+    'Financiamento pela CAIXA',
+    `<ul class="my-5">
+      <li>* Use seu FGTS</li>
+      <li>* Entrada facilitada</li>
+      <li>* Parcelas que cabem no seu bolso</li>
+    </ul>
+    `,
+    'Chegou a hora de transformar o aluguel em conquista.',
+    'Visite o apartamento decorado e venha conhecer o seu novo lar.',
+  ],
+
+  tags: {
+    area: '50m²',
+    bathroom: '1',
+    bedrooms: '2',
+    garage: '1',
+    kitchen: '1',
+    living_room: '1',
+    lote: '50m²',
+    orientation: 'Sul',
+    rooms: '3',
+    type: 'Apartamento',
+  },
+
+  images: [
+    ResidencialVistaAlegreIII,
+    ResidencialVistaAlegreIII01,
+    ResidencialVistaAlegreIII02,
+    ResidencialVistaAlegreIII03,
+    ResidencialVistaAlegreIII04,
+  ],
+
+  plant: [ResidencialVistaAlegreIIIPlanta01, ResidencialVistaAlegreIIIPlanta02],
+
+  benefities: [
+    'Condomínio fechado',
+    'Portaria 24 horas',
+    'Segurança para sua família',
+    'Piscina',
+    'Salão de festas com churrasqueira',
+    'Brinquedoteca',
+    'Academia',
+    'Salão de jogos',
+  ],
+
+  map: `
+    <iframe
+      src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.468067762195!2d-46.82477385979238!3d-23.62340276396376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce54cd9a10bea1%3A0x2a23bd13fa33105!2sRua%20Alberto%20Correia%20Francfort%2C%2044%20-%20Jardim%20Vista%20Alegre%2C%20Embu%20das%20Artes%20-%20SP%2C%2006807-461!5e0!3m2!1spt-BR!2sbr!4v1772401838943!5m2!1spt-BR!2sbr'
+      allowFullScreen={true}
+      loading='lazy'
+      referrerPolicy='no-referrer-when-downgrade'
+      style="width: 100%; height: 100%;"
+    ></iframe>
+  `,
+};
+
 const residencial_elizabete_i = {
   banner: {
     image: ResidencialElisabeteI,
@@ -467,15 +567,15 @@ const residencial_elizabete_ii = {
   ],
 
   tags: {
-    area: '46m²',
+    area: '50m²',
     bathroom: '1',
     bedrooms: '2',
     garage: '1',
     kitchen: '1',
     living_room: '1',
-    lote: '46m²',
+    lote: '50m²',
     orientation: 'Sul',
-    rooms: '4',
+    rooms: '3',
     type: 'Apartamento',
   },
 
@@ -578,20 +678,63 @@ const studio_vertentes = {
   },
 
   about: [
-    'O Residencial Jardim das Vertentes é uma ótima oportunidade para quem busca um investimento sólido e rentável na região do Butantã. Localizado há 800 metros da estação Vila Sônia do Metrô e com obras praticamente concluídas, o projeto conta com apartamentos compactos de 23m² com varanda e que serão entregues mobiliados!* O condomínio conta ainda com diversas áreas de convivência e lazer completo.',
+    'Studios modernos com 20m², pensados para quem busca praticidade, mobilidade e alta valorização.',
+    'Ideal para:',
+    `<ul class="my-5">
+      <li>✔ Moradia</li>
+      <li>✔ Renda com locação de curta temporada (Airbnb)</li>
+      <li>✔ Locação tradicional</li>
+      <li>✔ Investimento imobiliário</li>
+    </ul>`,
+    'Localização Estratégica',
+    `<ul class="my-5">
+      <li>* Próximo ao Metrô Vila Sônia</li>
+      <li>* Fácil acesso às Marginais</li>
+      <li>* Ao lado da Rodovia Raposo Tavares</li>
+      <li>* Região em constante valorização</li>
+    </ul>
+    `,
+    'Mobilidade que faz a diferença no dia a dia.',
+    'Estrutura Completa de Condomínio',
+    `<ul class="my-5">
+      <li>✔ Portaria eletrônica 24 horas</li>
+      <li>✔ Monitoramento por câmeras</li>
+      <li>✔ Garagem</li>
+      <li>✔ Minimercado self service</li>
+      <li>✔ Piscina</li>
+      <li>✔ Lavanderia automatizada OMO</li>
+      <li>✔ Espaço coworking</li>
+      <li>✔ Bicicletário</li>
+      <li>✔ Churrasqueira</li>
+      <li>✔ Espaço fitness</li>
+      <li>✔ Pilates</li>
+      <li>✔ Salão de jogos</li>
+    </ul>`,
+    'Tudo isso em um condomínio moderno, seguro e inteligente. Diferenciais das Unidades',
+    `<ul class="my-5">
+      <li>✔ Studios com 20m² bem distribuídos</li>
+      <li>✔ Ar-condicionado instalado</li>
+      <li>✔ Infraestrutura para internet</li>
+      <li>✔ Baixo custo de manutenção</li>
+      <li>✔ Alto potencial de rentabilidade</li>
+    </ul>`,
+    'Unidades à venda',
+    'Para morar ou investir.',
+    'Studios Vertentes é a combinação perfeita entre localização, praticidade e retorno financeiro.',
+    'Agende sua visita e conheça de perto essa oportunidade.',
   ],
 
   tags: {
-    area: '46m²',
+    area: '24m²',
     bathroom: '1',
-    bedrooms: '2',
-    garage: '1',
+    bedrooms: '1',
+    garage: '0 (a parte)',
     kitchen: '1',
     living_room: '1',
-    lote: '46m²',
+    lote: '24m²',
     orientation: 'Sul',
-    rooms: '4',
-    type: 'Apartamento',
+    rooms: '1',
+    type: 'Studio',
   },
 
   images: [
@@ -614,16 +757,11 @@ const studio_vertentes = {
   plant: [StudioVertentesPlanta01, StudioVertentesPlanta02],
 
   benefities: [
-    'Churrasqueira',
-    'Churrasqueira Gourmet',
-    'Escritório Coletivo',
-    'Espaço Pilates',
-    'Estacionamento',
-    'Fitness',
-    'Jardim',
-    'Salão de Festas',
-    'Praça de Convivência',
-    'Piscina',
+    'Coworking',
+    'Lavanderia OMO automatica',
+    'Cozinha compartilhado',
+    'Salão de festas',
+    'Academia',
   ],
 
   map: `
@@ -647,6 +785,7 @@ const details = {
   residencial_elizabete_ii: residencial_elizabete_ii,
   granja_residencial: granja_residencial,
   studio_vertentes: studio_vertentes,
+  residencial_vista_alegre_iii: residencial_vista_alegre_iii,
 };
 
 export { readyProperties, underConstructionProperties, details };
