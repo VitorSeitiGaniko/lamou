@@ -8,7 +8,7 @@ interface CardProps {
   rooms: number;
   bathrooms: number;
   bedrooms: number;
-  parkingSpaces: number;
+  parkingSpaces: number | string;
   status: string;
 }
 
