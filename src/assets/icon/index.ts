@@ -13,6 +13,8 @@ import Workspace from './workspace.svg';
 import Close from './close.svg';
 import Menu from './menu.svg';
 import WhatsAppNav from './whatsapp_nav.svg';
+import Target from './target.svg';
+import Profile from './profile.svg';
 
 export {
   Instagram,
@@ -30,4 +32,6 @@ export {
   Close,
   Menu,
   WhatsAppNav,
+  Target,
+  Profile,
 };

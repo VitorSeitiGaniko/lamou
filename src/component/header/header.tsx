@@ -19,7 +19,7 @@ const Header = () => {
             <NavLink to='/'>home</NavLink>
           </li>
           <li>
-            <NavLink to='/'>sobre nós</NavLink>
+            <NavLink to='/aboutUs'>sobre nós</NavLink>
           </li>
           <li>
             <NavLink to='/'>pronto para Morar</NavLink>

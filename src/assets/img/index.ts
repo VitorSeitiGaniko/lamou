@@ -51,6 +51,9 @@ import ResidencialVistaAlegreIII03 from './Residencial Vista Alegre III - 03.jpg
 import ResidencialVistaAlegreIII04 from './Residencial Vista Alegre III - 04.jpg';
 import ResidencialVistaAlegreIIIPlanta01 from './Residencial Vista Alegre III - Planta 01.jpg';
 import ResidencialVistaAlegreIIIPlanta02 from './Residencial Vista Alegre III - Planta 02.jpg';
+import AboutUsBanner from './aboutUs_banner.png';
+import AboutUsImage from './aboutUs.png';
+import AboutUsImageMobile from './About Us Mobile.png';
 
 export {
   Logo,
@@ -106,4 +109,7 @@ export {
   ResidencialVistaAlegreIII04,
   ResidencialVistaAlegreIIIPlanta01,
   ResidencialVistaAlegreIIIPlanta02,
+  AboutUsBanner,
+  AboutUsImage,
+  AboutUsImageMobile,
 };
