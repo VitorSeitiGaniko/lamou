@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { Banner01, Banner01Planta } from '../../../../assets';
 
 const Slide = () => {
@@ -11,9 +12,11 @@ const Slide = () => {
             <span>Vista Alegre - Embu das Artes</span>
           </div>
 
-          <button className='bg-[#8A684B] text-white rounded-4xl py-3 px-11 cursor-pointer hover:bg-[#846449] hover:font-semibold'>
-            Saiba mais
-          </button>
+          <NavLink to='/details/residencial_vista_alegre_iii'>
+            <button className='bg-[#8A684B] text-white rounded-4xl py-3 px-11 cursor-pointer hover:bg-[#846449] hover:font-semibold'>
+              Saiba mais
+            </button>
+          </NavLink>
         </div>
       </div>
 

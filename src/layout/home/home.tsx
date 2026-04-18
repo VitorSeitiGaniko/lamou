@@ -32,10 +32,6 @@ const Home = () => {
           <>
             <Slide />
           </>
-
-          <>
-            <Slide />
-          </>
         </Slider>
       </div>
 

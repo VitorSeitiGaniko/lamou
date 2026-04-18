@@ -3,7 +3,6 @@ import { Details } from '../../layout';
 
 const DetailsPage = () => {
   const { id } = useParams<{ id: string }>();
-
   scrollTo(0, 0);
 
   return (

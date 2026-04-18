@@ -3,26 +3,33 @@ interface CardProps {
   image: string;
   title: string;
   description: string;
+  bgColor: string;
+  textColor: string;
   reverse: boolean;
   isMobile: boolean;
 }
 
-function Card({ icon, image, title, description, reverse, isMobile }: CardProps) {
+function Card({ icon, image, title, description, bgColor, textColor, reverse, isMobile }: CardProps) {
   return (
     <div
-      className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} bg-[#80421D]/44 rounded-2xl h-[320px] lg:w-[1024px]`}
+      className='grid grid-cols-1 lg:grid-cols-2 lg:w-[964px] rounded-2xl'
+      style={{ backgroundColor: bgColor + '70' }}
     >
       {isMobile ? (
         <>
-          <div className='h-[320px]'>
+          <div className=''>
             <img src={image} alt={title} className='h-full w-full object-cover rounded-t-2xl' />
           </div>
-          <div className='flex flex-col h-[320px] p-8'>
+          <div className='flex flex-col p-8'>
             <i>
               <img src={icon} alt='' />
             </i>
-            <h2 className='mt-5 text-[#572D14] uppercase'>{title}</h2>
-            <p className='mt-4 text-[#572D14]'>{description}</p>
+            <h2 className={`mt-5 uppercase`} style={{ color: textColor }}>
+              {title}
+            </h2>
+            <p className='mt-4' style={{ color: textColor }}>
+              {description}
+            </p>
           </div>
         </>
       ) : (
@@ -33,15 +40,19 @@ function Card({ icon, image, title, description, reverse, isMobile }: CardProps)
                 <img
                   src={image}
                   alt={title}
-                  className='h-full w-full object-cover rounded-t-2xl lg:rounded-bl-2xl lg:rounded-tl-2xl'
+                  className='h-full w-full object-cover rounded-tl-2xl lg:rounded-bl-2xl lg:rounded-tl-2xl'
                 />
               </div>
               <div className='flex flex-col h-[320px] p-8'>
                 <i>
                   <img src={icon} alt='' />
                 </i>
-                <h2 className='mt-5 text-[#572D14] uppercase'>{title}</h2>
-                <p className='mt-4 text-[#572D14]'>{description}</p>
+                <h2 className='mt-5 uppercase' style={{ color: textColor }}>
+                  {title}
+                </h2>
+                <p className='mt-4' style={{ color: textColor }}>
+                  {description}
+                </p>
               </div>
             </>
           ) : (
@@ -50,8 +61,12 @@ function Card({ icon, image, title, description, reverse, isMobile }: CardProps)
                 <i>
                   <img src={icon} alt='' />
                 </i>
-                <h2 className='mt-5 text-[#572D14] uppercase'>{title}</h2>
-                <p className='mt-4 text-[#572D14]'>{description}</p>
+                <h2 className='mt-5 uppercase' style={{ color: textColor }}>
+                  {title}
+                </h2>
+                <p className='mt-4' style={{ color: textColor }}>
+                  {description}
+                </p>
               </div>
               <div className='h-[320px]'>
                 <img

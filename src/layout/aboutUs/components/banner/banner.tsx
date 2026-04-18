@@ -2,7 +2,7 @@ import { AboutUsBanner } from '../../../../assets';
 
 function Banner() {
   return (
-    <div className='relative w-full'>
+    <div className='flex w-full'>
       <img src={AboutUsBanner} alt='Banner' className='w-full' />
     </div>
   );

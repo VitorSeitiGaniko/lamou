@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { Footer, Header, WhatsAppLink } from './component';
-import { DetailsPage, HomePage, MaterialUI } from './page';
-import { AboutUs } from './layout/aboutUs';
+import { AboutUsPage, DetailsPage, HomePage, ListingPage, MaterialUI } from './page';
 
 function App() {
   return (
@@ -14,7 +13,8 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/details/:id' element={<DetailsPage />} />
           <Route path='/material' element={<MaterialUI />} />
-          <Route path='/aboutUs' element={<AboutUs />} />
+          <Route path='/aboutUs' element={<AboutUsPage />} />
+          <Route path='/listing/:id' element={<ListingPage />} />
         </Routes>
 
         <Footer />
