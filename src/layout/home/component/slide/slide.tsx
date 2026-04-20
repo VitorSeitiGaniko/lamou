@@ -32,9 +32,11 @@ const Slide = () => {
         </div>
 
         <div className='absolute text-[#35160B] bottom-6 flex flex-col items-center justify-center w-full'>
-          <button className='bg-[#35160B] text-white rounded-4xl py-2 px-8 cursor-pointer uppercase'>
-            Saiba mais
-          </button>
+          <NavLink to='/details/residencial_vista_alegre_iii'>
+            <button className='bg-[#35160B] text-white rounded-4xl py-2 px-8 cursor-pointer uppercase'>
+              Saiba mais
+            </button>
+          </NavLink>
         </div>
       </div>
     </div>
