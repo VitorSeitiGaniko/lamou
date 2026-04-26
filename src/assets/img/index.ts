@@ -35,6 +35,20 @@ import StudioVertentes10 from './Studio Vertentes - 10.jpg';
 import StudioVertentes11 from './Studio Vertentes - 11.jpg';
 import StudioVertentes12 from './Studio Vertentes - 12.jpg';
 import StudioVertentes13 from './Studio Vertentes - 13.jpg';
+import StudioVertentes14 from './Studio Vertentes - 14.jpg';
+import StudioVertentes15 from './Studio Vertentes - 15.jpg';
+import StudioVertentes16 from './Studio Vertentes - 16.jpg';
+import StudioVertentes17 from './Studio Vertentes - 17.jpg';
+import StudioVertentes18 from './Studio Vertentes - 18.jpg';
+import StudioVertentes19 from './Studio Vertentes - 19.jpg';
+import StudioVertentes20 from './Studio Vertentes - 20.jpg';
+import StudioVertentes21 from './Studio Vertentes - 21.jpg';
+import StudioVertentes22 from './Studio Vertentes - 22.jpg';
+import StudioVertentes23 from './Studio Vertentes - 23.jpg';
+import StudioVertentes24 from './Studio Vertentes - 24.jpg';
+import StudioVertentes25 from './Studio Vertentes - 25.jpg';
+import StudioVertentes26 from './Studio Vertentes - 26.jpg';
+import StudioVertentes27 from './Studio Vertentes - 27.jpg';
 import ResidencialElisabeteIPlanta01 from './Residencial Jd Elisabete I - Planta 01.jpg';
 import ResidencialElisabeteIPlanta02 from './Residencial Jd Elisabete I - Planta 02.jpg';
 import ResidencialElisabeteI01 from './Residencial Jd Elisabete I - 01.jpg';
@@ -44,6 +58,8 @@ import ResidencialElisabeteI04 from './Residencial Jd Elisabete I - 04.jpg';
 import ResidencialElisabeteI05 from './Residencial Jd Elisabete I - 05.jpg';
 import ResidencialElisabeteI06 from './Residencial Jd Elisabete I - 06.jpg';
 import ResidencialElisabeteI07 from './Residencial Jd Elisabete I - 07.jpg';
+import ResidencialElisabeteII01 from './Residencial Jd Elisabete II - 01.jpg';
+import ResidencialElisabeteII02 from './Residencial Jd Elisabete II - 02.jpg';
 import ResidencialVistaAlegreIII from './Residencial Vista Alegre III.jpg';
 import ResidencialVistaAlegreIII01 from './Residencial Vista Alegre III - 01.jpg';
 import ResidencialVistaAlegreIII02 from './Residencial Vista Alegre III - 02.jpg';
@@ -54,6 +70,22 @@ import ResidencialVistaAlegreIIIPlanta02 from './Residencial Vista Alegre III - 
 import AboutUsBanner from './aboutUs_banner.png';
 import AboutUsImage from './aboutUs.png';
 import AboutUsImageMobile from './About Us Mobile.png';
+import ResidencialGardenias01 from './Residencial Gardenias - 01.jpg';
+import ResidencialGardenias02 from './Residencial Gardenias - 02.jpg';
+import ResidencialGardenias03 from './Residencial Gardenias - 03.jpg';
+import ResidencialGardenias04 from './Residencial Gardenias - 04.jpg';
+import ResidencialGardenias05 from './Residencial Gardenias - 05.jpg';
+import ResidencialGardenias06 from './Residencial Gardenias - 06.jpg';
+import ResidencialGardenias07 from './Residencial Gardenias - 07.jpg';
+import ResidencialGardenias08 from './Residencial Gardenias - 08.jpg';
+import ResidencialGardeniasPlanta01 from './Residencial Gardenias - Planta 01.jpg';
+import ResidencialGardeniasPlanta02 from './Residencial Gardenias - Planta 02.jpg';
+import ResidencialJasmins01 from './Residencial Jasmins - 01.jpg';
+import ResidencialJasmins02 from './Residencial Jasmins - 02.jpg';
+import ResidencialJasmins03 from './Residencial Jasmins - 03.jpg';
+import ResidencialJasmins04 from './Residencial Jasmins - 04.jpg';
+import ResidencialJasmins05 from './Residencial Jasmins - 05.jpg';
+import ResidencialMariaRosa01 from './Residencial Maria Rosa - 01.jpg';
 
 export {
   Logo,
@@ -93,6 +125,20 @@ export {
   StudioVertentes11,
   StudioVertentes12,
   StudioVertentes13,
+  StudioVertentes14,
+  StudioVertentes15,
+  StudioVertentes16,
+  StudioVertentes17,
+  StudioVertentes18,
+  StudioVertentes19,
+  StudioVertentes20,
+  StudioVertentes21,
+  StudioVertentes22,
+  StudioVertentes23,
+  StudioVertentes24,
+  StudioVertentes25,
+  StudioVertentes26,
+  StudioVertentes27,
   ResidencialElisabeteIPlanta01,
   ResidencialElisabeteIPlanta02,
   ResidencialElisabeteI01,
@@ -102,6 +148,8 @@ export {
   ResidencialElisabeteI05,
   ResidencialElisabeteI06,
   ResidencialElisabeteI07,
+  ResidencialElisabeteII01,
+  ResidencialElisabeteII02,
   ResidencialVistaAlegreIII,
   ResidencialVistaAlegreIII01,
   ResidencialVistaAlegreIII02,
@@ -112,4 +160,20 @@ export {
   AboutUsBanner,
   AboutUsImage,
   AboutUsImageMobile,
+  ResidencialGardenias01,
+  ResidencialGardenias02,
+  ResidencialGardenias03,
+  ResidencialGardenias04,
+  ResidencialGardenias05,
+  ResidencialGardenias06,
+  ResidencialGardenias07,
+  ResidencialGardenias08,
+  ResidencialGardeniasPlanta01,
+  ResidencialGardeniasPlanta02,
+  ResidencialJasmins01,
+  ResidencialJasmins02,
+  ResidencialJasmins03,
+  ResidencialJasmins04,
+  ResidencialJasmins05,
+  ResidencialMariaRosa01,
 };

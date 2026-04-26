@@ -19,19 +19,20 @@ import {
   GranjaResidencial02,
   StudioVertentesPlanta01,
   StudioVertentesPlanta02,
-  StudioVertentes01,
-  StudioVertentes02,
-  StudioVertentes03,
-  StudioVertentes04,
-  StudioVertentes05,
-  StudioVertentes06,
-  StudioVertentes07,
-  StudioVertentes08,
-  StudioVertentes09,
-  StudioVertentes10,
-  StudioVertentes11,
-  StudioVertentes12,
-  StudioVertentes13,
+  StudioVertentes14,
+  StudioVertentes15,
+  StudioVertentes16,
+  StudioVertentes17,
+  StudioVertentes18,
+  StudioVertentes19,
+  StudioVertentes20,
+  StudioVertentes21,
+  StudioVertentes22,
+  StudioVertentes23,
+  StudioVertentes24,
+  StudioVertentes25,
+  StudioVertentes26,
+  StudioVertentes27,
   ResidencialElisabeteIPlanta02,
   ResidencialElisabeteIPlanta01,
   ResidencialElisabeteI01,
@@ -41,13 +42,30 @@ import {
   ResidencialElisabeteI05,
   ResidencialElisabeteI06,
   ResidencialElisabeteI07,
+  ResidencialElisabeteII01,
+  ResidencialElisabeteII02,
   ResidencialVistaAlegreIII,
   ResidencialVistaAlegreIII01,
   ResidencialVistaAlegreIII02,
   ResidencialVistaAlegreIII03,
-  ResidencialVistaAlegreIII04,
   ResidencialVistaAlegreIIIPlanta01,
   ResidencialVistaAlegreIIIPlanta02,
+  ResidencialGardenias01,
+  ResidencialGardenias02,
+  ResidencialGardenias03,
+  ResidencialGardenias04,
+  ResidencialGardenias05,
+  ResidencialGardenias06,
+  ResidencialGardenias07,
+  ResidencialGardenias08,
+  ResidencialGardeniasPlanta01,
+  ResidencialGardeniasPlanta02,
+  ResidencialJasmins01,
+  ResidencialJasmins02,
+  ResidencialJasmins03,
+  ResidencialJasmins04,
+  ResidencialJasmins05,
+  ResidencialMariaRosa01,
 } from '../assets';
 
 const readyProperties = [
@@ -94,9 +112,6 @@ const readyProperties = [
     parkingSpaces: 0,
     status: 'ready',
   },
-];
-
-const underConstructionProperties = [
   {
     image: ResidencialVistaAlegreII,
     name: 'Residencial Vista Alegre II',
@@ -106,10 +121,10 @@ const underConstructionProperties = [
     bathrooms: 0,
     bedrooms: 0,
     parkingSpaces: 0,
-    status: 'under_construction',
+    status: 'ready',
   },
   {
-    image: ResidencialVistaAlegreII,
+    image: ResidencialVistaAlegreIII,
     name: 'Residencial Vista Alegre III',
     address: 'R​​​​ua Alberto Correa Francfort, ​59 - ​Embu das Artes - São Paulo, SP',
     area: '50m²',
@@ -117,7 +132,7 @@ const underConstructionProperties = [
     bathrooms: 1,
     bedrooms: 2,
     parkingSpaces: 1,
-    status: 'under_construction',
+    status: 'ready',
   },
   {
     image: ResidencialElisabeteI,
@@ -128,10 +143,10 @@ const underConstructionProperties = [
     bathrooms: 0,
     bedrooms: 0,
     parkingSpaces: 0,
-    status: 'under_construction',
+    status: 'ready',
   },
   {
-    image: ResidencialElisabeteI,
+    image: ResidencialElisabeteII01,
     name: 'Residencial Elizabete II',
     address: 'Rua Manoel Maria Fernandes, 330',
     area: '50m²',
@@ -139,7 +154,7 @@ const underConstructionProperties = [
     bathrooms: 1,
     bedrooms: 2,
     parkingSpaces: 1,
-    status: 'under_construction',
+    status: 'ready',
   },
   {
     image: GranjaResidencial,
@@ -150,13 +165,49 @@ const underConstructionProperties = [
     bathrooms: 0,
     bedrooms: 0,
     parkingSpaces: 0,
-    status: 'under_construction',
+    status: 'ready',
   },
   {
-    image: StudioVertentes,
+    image: ResidencialGardenias01,
+    name: 'Residencial Gardenias',
+    address: 'R. Gardenias',
+    area: 'Xm²',
+    rooms: 1,
+    bathrooms: 1,
+    bedrooms: 1,
+    parkingSpaces: '0 (a parte)',
+    status: 'ready',
+  },
+  {
+    image: StudioVertentes17,
     name: 'Studio Vertentes',
     address: 'R. Benedito Branco de Abreu, 12',
     area: '24m²',
+    rooms: 1,
+    bathrooms: 1,
+    bedrooms: 1,
+    parkingSpaces: '0 (a parte)',
+    status: 'ready',
+  },
+];
+
+const underConstructionProperties = [
+  {
+    image: ResidencialJasmins01,
+    name: 'Residencial Jasmins',
+    address: 'R. Jasmins',
+    area: 'Xm²',
+    rooms: 1,
+    bathrooms: 1,
+    bedrooms: 1,
+    parkingSpaces: '0 (a parte)',
+    status: 'under_construction',
+  },
+  {
+    image: ResidencialMariaRosa01,
+    name: 'Residencial Maria Rosa',
+    address: 'R. Maria Rosa',
+    area: 'Xm²',
     rooms: 1,
     bathrooms: 1,
     bedrooms: 1,
@@ -472,7 +523,6 @@ const residencial_vista_alegre_iii = {
     ResidencialVistaAlegreIII01,
     ResidencialVistaAlegreIII02,
     ResidencialVistaAlegreIII03,
-    ResidencialVistaAlegreIII04,
   ],
 
   plant: [ResidencialVistaAlegreIIIPlanta01, ResidencialVistaAlegreIIIPlanta02],
@@ -539,7 +589,7 @@ const residencial_elizabete_i = {
 
   plant: [ResidencialElisabeteIPlanta01, ResidencialElisabeteIPlanta02],
 
-  benefities: ['Churrasqueira', 'Fitness', 'Jardim', 'Playground', 'Salão de Festas', 'Piscina'],
+  benefities: ['Churrasqueira', 'Fitness', 'Jardim', 'Playground', 'Salão de Festas'],
 
   map: `
     <iframe
@@ -554,7 +604,7 @@ const residencial_elizabete_i = {
 
 const residencial_elizabete_ii = {
   banner: {
-    image: ResidencialElisabeteI,
+    image: ResidencialElisabeteII01,
     name: 'Residencial Elizabete II',
     description:
       'Viva a poucos passos do metrô em um projeto que une design moderno, lazer completo e a conveniência de ter tudo por perto.',
@@ -580,7 +630,8 @@ const residencial_elizabete_ii = {
   },
 
   images: [
-    ResidencialElisabeteI,
+    ResidencialElisabeteII01,
+    ResidencialElisabeteII02,
     ResidencialElisabeteI01,
     ResidencialElisabeteI02,
     ResidencialElisabeteI03,
@@ -670,7 +721,7 @@ const granja_residencial = {
 
 const studio_vertentes = {
   banner: {
-    image: StudioVertentes,
+    image: StudioVertentes17,
     name: 'Studio Vertentes',
     description: 'Invista ou more em uma das regiões que mais crescem na Zona Oeste de São Paulo.',
     localization: 'Butantã',
@@ -738,23 +789,180 @@ const studio_vertentes = {
   },
 
   images: [
+    StudioVertentes17,
     StudioVertentes,
-    StudioVertentes01,
-    StudioVertentes02,
-    StudioVertentes03,
-    StudioVertentes04,
-    StudioVertentes05,
-    StudioVertentes06,
-    StudioVertentes07,
-    StudioVertentes08,
-    StudioVertentes09,
-    StudioVertentes10,
-    StudioVertentes11,
-    StudioVertentes12,
-    StudioVertentes13,
+    StudioVertentes14,
+    StudioVertentes24,
+    StudioVertentes15,
+    StudioVertentes25,
+    StudioVertentes16,
+    StudioVertentes18,
+    StudioVertentes26,
+    StudioVertentes19,
+    StudioVertentes20,
+    StudioVertentes27,
+    StudioVertentes21,
+    StudioVertentes22,
+    StudioVertentes23,
   ],
 
   plant: [StudioVertentesPlanta01, StudioVertentesPlanta02],
+
+  benefities: [
+    'Coworking',
+    'Lavanderia OMO automatica',
+    'Cozinha compartilhado',
+    'Salão de festas',
+    'Academia',
+  ],
+
+  map: `
+    <iframe
+      src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5291914988534!2d-46.74636135979369!3d-23.58534696256302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce567dff2d41ed%3A0xaa0ac51271456320!2sR.%20Benedito%20Branco%20de%20Abreu%2C%2012%20-%20Jardim%20das%20Vertentes%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005541-090!5e0!3m2!1spt-BR!2sbr!4v1772402608976!5m2!1spt-BR!2sbr'
+      allowFullScreen={true}
+      loading='lazy'
+      referrerPolicy='no-referrer-when-downgrade'
+      style="width: 100%; height: 100%;"
+    ></iframe>
+  `,
+};
+
+const residencial_gardenias = {
+  banner: {
+    image: ResidencialGardenias01,
+    name: 'Residencial Gardenias',
+    description: 'Residencial Gardenias',
+    localization: 'Residencial Gardenias',
+    status: 'Pronto para morar',
+  },
+
+  about: ['Residencial Gardenias'],
+
+  tags: {
+    area: '24m²',
+    bathroom: '1',
+    bedrooms: '1',
+    garage: '0 (a parte)',
+    kitchen: '1',
+    living_room: '1',
+    lote: '24m²',
+    orientation: 'Sul',
+    rooms: '1',
+    type: 'Studio',
+  },
+
+  images: [
+    ResidencialGardenias01,
+    ResidencialGardenias02,
+    ResidencialGardenias03,
+    ResidencialGardenias04,
+    ResidencialGardenias05,
+    ResidencialGardenias06,
+    ResidencialGardenias07,
+    ResidencialGardenias08,
+  ],
+
+  plant: [ResidencialGardeniasPlanta01, ResidencialGardeniasPlanta02],
+
+  benefities: [
+    'Coworking',
+    'Lavanderia OMO automatica',
+    'Cozinha compartilhado',
+    'Salão de festas',
+    'Academia',
+  ],
+
+  map: `
+    <iframe
+      src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5291914988534!2d-46.74636135979369!3d-23.58534696256302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce567dff2d41ed%3A0xaa0ac51271456320!2sR.%20Benedito%20Branco%20de%20Abreu%2C%2012%20-%20Jardim%20das%20Vertentes%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005541-090!5e0!3m2!1spt-BR!2sbr!4v1772402608976!5m2!1spt-BR!2sbr'
+      allowFullScreen={true}
+      loading='lazy'
+      referrerPolicy='no-referrer-when-downgrade'
+      style="width: 100%; height: 100%;"
+    ></iframe>
+  `,
+};
+
+const residencial_jasmins = {
+  banner: {
+    image: ResidencialJasmins01,
+    name: 'Residencial Jasmins',
+    description: 'Residencial Jasmins',
+    localization: 'Residencial Jasmins',
+    status: 'Em construção',
+  },
+
+  about: ['Residencial Jasmins'],
+
+  tags: {
+    area: '24m²',
+    bathroom: '1',
+    bedrooms: '1',
+    garage: '0 (a parte)',
+    kitchen: '1',
+    living_room: '1',
+    lote: '24m²',
+    orientation: 'Sul',
+    rooms: '1',
+    type: 'Studio',
+  },
+
+  images: [
+    ResidencialJasmins01,
+    ResidencialJasmins02,
+    ResidencialJasmins03,
+    ResidencialJasmins04,
+    ResidencialJasmins05,
+  ],
+
+  plant: [],
+
+  benefities: [
+    'Coworking',
+    'Lavanderia OMO automatica',
+    'Cozinha compartilhado',
+    'Salão de festas',
+    'Academia',
+  ],
+
+  map: `
+    <iframe
+      src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5291914988534!2d-46.74636135979369!3d-23.58534696256302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce567dff2d41ed%3A0xaa0ac51271456320!2sR.%20Benedito%20Branco%20de%20Abreu%2C%2012%20-%20Jardim%20das%20Vertentes%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005541-090!5e0!3m2!1spt-BR!2sbr!4v1772402608976!5m2!1spt-BR!2sbr'
+      allowFullScreen={true}
+      loading='lazy'
+      referrerPolicy='no-referrer-when-downgrade'
+      style="width: 100%; height: 100%;"
+    ></iframe>
+  `,
+};
+
+const residencial_maria_rosa = {
+  banner: {
+    image: ResidencialMariaRosa01,
+    name: 'Residencial Maria Rosa',
+    description: 'Residencial Maria Rosa',
+    localization: 'Residencial Maria Rosa',
+    status: 'Em construção',
+  },
+
+  about: ['Residencial Maria Rosa'],
+
+  tags: {
+    area: '24m²',
+    bathroom: '1',
+    bedrooms: '1',
+    garage: '0 (a parte)',
+    kitchen: '1',
+    living_room: '1',
+    lote: '24m²',
+    orientation: 'Sul',
+    rooms: '1',
+    type: 'Studio',
+  },
+
+  images: [ResidencialMariaRosa01],
+
+  plant: [],
 
   benefities: [
     'Coworking',
@@ -786,6 +994,9 @@ const details = {
   granja_residencial: granja_residencial,
   studio_vertentes: studio_vertentes,
   residencial_vista_alegre_iii: residencial_vista_alegre_iii,
+  residencial_gardenias: residencial_gardenias,
+  residencial_jasmins: residencial_jasmins,
+  residencial_maria_rosa: residencial_maria_rosa,
 };
 
 export { readyProperties, underConstructionProperties, details };
