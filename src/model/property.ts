@@ -70,9 +70,54 @@ import {
 
 const readyProperties = [
   {
-    image: ResidencialPaisagem,
-    name: 'Residencial Paisagem',
-    address: 'Av. Das Cruzadas, 170 - Cotia - SP',
+    image: ResidencialVistaAlegreIII,
+    name: 'Residencial Vista Alegre III',
+    address: 'R​​​​ua Alberto Correa Francfort, ​59 - ​Embu das Artes - São Paulo, SP',
+    area: '50m²',
+    rooms: 3,
+    bathrooms: 1,
+    bedrooms: 2,
+    parkingSpaces: 1,
+    status: 'under_construction',
+  },
+  {
+    image: StudioVertentes17,
+    name: 'Studio Vertentes',
+    address: 'R. Benedito Branco de Abreu, 12',
+    area: '24m²',
+    rooms: 1,
+    bathrooms: 1,
+    bedrooms: 1,
+    parkingSpaces: '0 (a parte)',
+    status: 'under_construction',
+  },
+  {
+    image: ResidencialElisabeteII01,
+    name: 'Residencial Elizabete II',
+    address: 'Rua Manoel Maria Fernandes, 330',
+    area: '50m²',
+    rooms: 3,
+    bathrooms: 1,
+    bedrooms: 2,
+    parkingSpaces: 1,
+    status: 'under_construction',
+  },
+  {
+    image: Park395,
+    name: 'Park 395',
+    address: 'Rua das Gardênias 395 - Taboão da Serra - São Paulo, SP',
+    area: '64m2 a 128m2',
+    rooms: 0,
+    bathrooms: 0,
+    bedrooms: 0,
+    parkingSpaces: 0,
+    status: 'under_construction',
+  },
+  {
+    image: ResidencialElisabeteI,
+    name: 'Residencial Elizabete I',
+    address: 'Rua Manoel Maria Fernandes, 330',
+    area: '47m² e 48m²',
     rooms: 0,
     bathrooms: 0,
     bedrooms: 0,
@@ -80,10 +125,20 @@ const readyProperties = [
     status: 'ready',
   },
   {
-    image: Park395,
-    name: 'Park 395',
-    address: 'Rua das Gardênias 395 - Taboão da Serra - São Paulo, SP',
-    area: '64m2 a 128m2',
+    image: GranjaResidencial,
+    name: 'Granja Residencial',
+    address: 'Estrada da Aldeia, 7509 - Granja Viana - SP',
+    area: '57m² e 61m²',
+    rooms: 0,
+    bathrooms: 0,
+    bedrooms: 0,
+    parkingSpaces: 0,
+    status: 'ready',
+  },
+  {
+    image: ResidencialPaisagem,
+    name: 'Residencial Paisagem',
+    address: 'Av. Das Cruzadas, 170 - Cotia - SP',
     rooms: 0,
     bathrooms: 0,
     bedrooms: 0,
@@ -124,65 +179,10 @@ const readyProperties = [
     status: 'ready',
   },
   {
-    image: ResidencialVistaAlegreIII,
-    name: 'Residencial Vista Alegre III',
-    address: 'R​​​​ua Alberto Correa Francfort, ​59 - ​Embu das Artes - São Paulo, SP',
-    area: '50m²',
-    rooms: 3,
-    bathrooms: 1,
-    bedrooms: 2,
-    parkingSpaces: 1,
-    status: 'ready',
-  },
-  {
-    image: ResidencialElisabeteI,
-    name: 'Residencial Elizabete I',
-    address: 'Rua Manoel Maria Fernandes, 330',
-    area: '47m² e 48m²',
-    rooms: 0,
-    bathrooms: 0,
-    bedrooms: 0,
-    parkingSpaces: 0,
-    status: 'ready',
-  },
-  {
-    image: ResidencialElisabeteII01,
-    name: 'Residencial Elizabete II',
-    address: 'Rua Manoel Maria Fernandes, 330',
-    area: '50m²',
-    rooms: 3,
-    bathrooms: 1,
-    bedrooms: 2,
-    parkingSpaces: 1,
-    status: 'ready',
-  },
-  {
-    image: GranjaResidencial,
-    name: 'Granja Residencial',
-    address: 'Estrada da Aldeia, 7509 - Granja Viana - SP',
-    area: '57m² e 61m²',
-    rooms: 0,
-    bathrooms: 0,
-    bedrooms: 0,
-    parkingSpaces: 0,
-    status: 'ready',
-  },
-  {
     image: ResidencialGardenias01,
     name: 'Residencial Gardenias',
     address: 'R. Gardenias',
     area: 'Xm²',
-    rooms: 1,
-    bathrooms: 1,
-    bedrooms: 1,
-    parkingSpaces: '0 (a parte)',
-    status: 'ready',
-  },
-  {
-    image: StudioVertentes17,
-    name: 'Studio Vertentes',
-    address: 'R. Benedito Branco de Abreu, 12',
-    area: '24m²',
     rooms: 1,
     bathrooms: 1,
     bedrooms: 1,
@@ -240,7 +240,6 @@ const residencial_paisagem = {
     kitchen: '1',
     living_room: '1',
     lote: '46m²',
-    orientation: 'Sul',
     rooms: '4',
     type: 'Apartamento',
   },
@@ -285,7 +284,6 @@ const residencial_aldeia = {
     kitchen: '1',
     living_room: '1',
     lote: '46m²',
-    orientation: 'Sul',
     rooms: '4',
     type: 'Apartamento',
   },
@@ -327,7 +325,6 @@ const park_395 = {
     kitchen: '1',
     living_room: '1',
     lote: '46m²',
-    orientation: 'Sul',
     rooms: '4',
     type: 'Apartamento',
   },
@@ -387,7 +384,6 @@ const residencial_paineiras = {
     kitchen: '1',
     living_room: '1',
     lote: '46m²',
-    orientation: 'Sul',
     rooms: '4',
     type: 'Apartamento',
   },
@@ -431,7 +427,6 @@ const residencial_vista_alegre_ii = {
     kitchen: '1',
     living_room: '1',
     lote: '46m²',
-    orientation: 'Sul',
     rooms: '4',
     type: 'Apartamento',
   },
@@ -513,7 +508,6 @@ const residencial_vista_alegre_iii = {
     kitchen: '1',
     living_room: '1',
     lote: '50m²',
-    orientation: 'Sul',
     rooms: '3',
     type: 'Apartamento',
   },
@@ -571,7 +565,6 @@ const residencial_elizabete_i = {
     kitchen: '1',
     living_room: '1',
     lote: '46m²',
-    orientation: 'Sul',
     rooms: '4',
     type: 'Apartamento',
   },
@@ -624,7 +617,6 @@ const residencial_elizabete_ii = {
     kitchen: '1',
     living_room: '1',
     lote: '50m²',
-    orientation: 'Sul',
     rooms: '3',
     type: 'Apartamento',
   },
@@ -680,7 +672,6 @@ const granja_residencial = {
     kitchen: '1',
     living_room: '1',
     lote: '46m²',
-    orientation: 'Sul',
     rooms: '4',
     type: 'Apartamento',
   },
@@ -783,7 +774,6 @@ const studio_vertentes = {
     kitchen: '1',
     living_room: '1',
     lote: '24m²',
-    orientation: 'Sul',
     rooms: '1',
     type: 'Studio',
   },
@@ -846,7 +836,6 @@ const residencial_gardenias = {
     kitchen: '1',
     living_room: '1',
     lote: '24m²',
-    orientation: 'Sul',
     rooms: '1',
     type: 'Studio',
   },
@@ -864,13 +853,7 @@ const residencial_gardenias = {
 
   plant: [ResidencialGardeniasPlanta01, ResidencialGardeniasPlanta02],
 
-  benefities: [
-    'Coworking',
-    'Lavanderia OMO automatica',
-    'Cozinha compartilhado',
-    'Salão de festas',
-    'Academia',
-  ],
+  benefities: ['Salão de festas', 'Academia'],
 
   map: `
     <iframe
@@ -902,7 +885,6 @@ const residencial_jasmins = {
     kitchen: '1',
     living_room: '1',
     lote: '24m²',
-    orientation: 'Sul',
     rooms: '1',
     type: 'Studio',
   },
@@ -917,17 +899,11 @@ const residencial_jasmins = {
 
   plant: [],
 
-  benefities: [
-    'Coworking',
-    'Lavanderia OMO automatica',
-    'Cozinha compartilhado',
-    'Salão de festas',
-    'Academia',
-  ],
+  benefities: ['Salão de festas', 'Academia'],
 
   map: `
     <iframe
-      src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5291914988534!2d-46.74636135979369!3d-23.58534696256302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce567dff2d41ed%3A0xaa0ac51271456320!2sR.%20Benedito%20Branco%20de%20Abreu%2C%2012%20-%20Jardim%20das%20Vertentes%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005541-090!5e0!3m2!1spt-BR!2sbr!4v1772402608976!5m2!1spt-BR!2sbr'
+      src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0173399779133!2d-46.76165138867455!3d-23.60371106306162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce543b05866471%3A0x1382ab34fa63593e!2sR.%20das%20Cam%C3%A9lias%2C%20355%20-%20Parque%20Assuncao%2C%20Tabo%C3%A3o%20da%20Serra%20-%20SP%2C%2006754-110!5e0!3m2!1spt-BR!2sbr!4v1777303147816!5m2!1spt-BR!2sbr'
       allowFullScreen={true}
       loading='lazy'
       referrerPolicy='no-referrer-when-downgrade'
@@ -955,7 +931,6 @@ const residencial_maria_rosa = {
     kitchen: '1',
     living_room: '1',
     lote: '24m²',
-    orientation: 'Sul',
     rooms: '1',
     type: 'Studio',
   },
@@ -964,17 +939,11 @@ const residencial_maria_rosa = {
 
   plant: [],
 
-  benefities: [
-    'Coworking',
-    'Lavanderia OMO automatica',
-    'Cozinha compartilhado',
-    'Salão de festas',
-    'Academia',
-  ],
+  benefities: ['Salão de festas', 'Academia'],
 
   map: `
     <iframe
-      src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5291914988534!2d-46.74636135979369!3d-23.58534696256302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce567dff2d41ed%3A0xaa0ac51271456320!2sR.%20Benedito%20Branco%20de%20Abreu%2C%2012%20-%20Jardim%20das%20Vertentes%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005541-090!5e0!3m2!1spt-BR!2sbr!4v1772402608976!5m2!1spt-BR!2sbr'
+      src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.7198665993633!2d-46.76464658867425!3d-23.614377563454383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce54169aa40249%3A0x81c5ea81353a66a5!2sR.%20Jo%C3%A3o%20Domingues%2C%20200%20-%20Jardim%20Maria%20Rosa%2C%20Tabo%C3%A3o%20da%20Serra%20-%20SP%2C%2006763-310!5e0!3m2!1spt-BR!2sbr!4v1777303071991!5m2!1spt-BR!2sbr'
       allowFullScreen={true}
       loading='lazy'
       referrerPolicy='no-referrer-when-downgrade'
