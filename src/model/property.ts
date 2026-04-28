@@ -200,7 +200,7 @@ const underConstructionProperties = [
     rooms: 1,
     bathrooms: 1,
     bedrooms: 1,
-    parkingSpaces: '0 (a parte)',
+    parkingSpaces: '1',
     status: 'under_construction',
   },
   {
@@ -211,7 +211,7 @@ const underConstructionProperties = [
     rooms: 1,
     bathrooms: 1,
     bedrooms: 1,
-    parkingSpaces: '0 (a parte)',
+    parkingSpaces: '1',
     status: 'under_construction',
   },
 ];
@@ -899,11 +899,7 @@ const residencial_jasmins = {
 
   plant: [],
 
-  benefities: [
-    'Salão de festas', 
-    'Academia',
-    'Churrasqueira',
-  ],
+  benefities: ['Salão de festas', 'Academia', 'Churrasqueira'],
 
   map: `
     <iframe
@@ -943,12 +939,7 @@ const residencial_maria_rosa = {
 
   plant: [],
 
-  benefities: [
-    'Salão de festas', 
-    'Academia', 
-    'Piscina', 
-    'Churrasqueira',
-  ],
+  benefities: ['Salão de festas', 'Academia', 'Piscina', 'Churrasqueira'],
 
   map: `
     <iframe
