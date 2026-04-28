@@ -481,7 +481,6 @@ const residencial_vista_alegre_iii = {
       <li>✔ Condomínio fechado</li>
       <li>✔ Portaria 24 horas</li>
       <li>✔ Segurança para sua família</li>
-      <li>✔ Piscina</li>
       <li>✔ Salão de festas com churrasqueira</li>
       <li>✔ Brinquedoteca</li>
       <li>✔ Academia</li>
@@ -525,7 +524,6 @@ const residencial_vista_alegre_iii = {
     'Condomínio fechado',
     'Portaria 24 horas',
     'Segurança para sua família',
-    'Piscina',
     'Salão de festas com churrasqueira',
     'Brinquedoteca',
     'Academia',
@@ -801,8 +799,10 @@ const studio_vertentes = {
   benefities: [
     'Coworking',
     'Lavanderia OMO automatica',
-    'Cozinha compartilhado',
+    'Cozinha compartilhada',
     'Salão de festas',
+    'Piscina',
+    'Salão de jogos',
     'Academia',
   ],
 
@@ -881,10 +881,10 @@ const residencial_jasmins = {
     area: '24m²',
     bathroom: '1',
     bedrooms: '1',
-    garage: '0 (a parte)',
+    garage: '1',
     kitchen: '1',
     living_room: '1',
-    lote: '24m²',
+    lote: '47m²',
     rooms: '1',
     type: 'Studio',
   },
@@ -899,7 +899,11 @@ const residencial_jasmins = {
 
   plant: [],
 
-  benefities: ['Salão de festas', 'Academia'],
+  benefities: [
+    'Salão de festas', 
+    'Academia',
+    'Churrasqueira',
+  ],
 
   map: `
     <iframe
@@ -927,10 +931,10 @@ const residencial_maria_rosa = {
     area: '24m²',
     bathroom: '1',
     bedrooms: '1',
-    garage: '0 (a parte)',
+    garage: '1',
     kitchen: '1',
     living_room: '1',
-    lote: '24m²',
+    lote: '47m²',
     rooms: '1',
     type: 'Studio',
   },
@@ -939,7 +943,12 @@ const residencial_maria_rosa = {
 
   plant: [],
 
-  benefities: ['Salão de festas', 'Academia'],
+  benefities: [
+    'Salão de festas', 
+    'Academia', 
+    'Piscina', 
+    'Churrasqueira',
+  ],
 
   map: `
     <iframe

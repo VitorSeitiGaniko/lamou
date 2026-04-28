@@ -1,13 +1,4 @@
-import {
-  Apartment,
-  FullScreen,
-  Kitchen,
-  LocationMarker,
-  Parking,
-  Shower,
-  Tv,
-  Workspace,
-} from '../../../../assets';
+import { Apartment, FullScreen, Kitchen, Parking, Shower, Tv, Workspace } from '../../../../assets';
 
 interface Tag {
   area: string;
@@ -17,7 +8,6 @@ interface Tag {
   kitchen: string;
   living_room: string;
   lote: string;
-  orientation: string;
   rooms: string;
   type: string;
 }
@@ -66,14 +56,6 @@ const About = ({ text, tags }: AboutProps) => {
               <p className='text-black tex-xl'>
                 <span>Tamanho do lote:</span>
                 <span className='font-bold ml-1'>{tags.lote}</span>
-              </p>
-            </div>
-
-            <div className='flex gap-4 items-center'>
-              <img src={LocationMarker} alt='LocationMarker' />
-              <p className='text-black tex-xl'>
-                <span>Orientação:</span>
-                <span className='font-bold ml-1'>{tags.orientation}</span>
               </p>
             </div>
 
@@ -158,14 +140,6 @@ const About = ({ text, tags }: AboutProps) => {
             <p className='text-black tex-xl'>
               <span>Tamanho do lote:</span>
               <span className='font-bold ml-1'>{tags.lote}</span>
-            </p>
-          </div>
-
-          <div className='flex gap-4 items-center'>
-            <img src={LocationMarker} alt='LocationMarker' />
-            <p className='text-black tex-xl'>
-              <span>Orientação:</span>
-              <span className='font-bold ml-1'>{tags.orientation}</span>
             </p>
           </div>
 
