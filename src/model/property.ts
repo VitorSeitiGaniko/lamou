@@ -82,7 +82,7 @@ const readyProperties = [
   },
   {
     image: StudioVertentes17,
-    name: 'Studio Vertentes',
+    name: 'Studios Vertentes',
     address: 'R. Benedito Branco de Abreu, 12',
     area: '24m²',
     rooms: 1,
@@ -194,9 +194,9 @@ const readyProperties = [
 const underConstructionProperties = [
   {
     image: ResidencialJasmins01,
-    name: 'Residencial Jasmins',
+    name: 'Residencial das Flores',
     address: 'R. Jasmins',
-    area: 'Xm²',
+    area: '47m²',
     rooms: 1,
     bathrooms: 1,
     bedrooms: 1,
@@ -205,9 +205,9 @@ const underConstructionProperties = [
   },
   {
     image: ResidencialMariaRosa01,
-    name: 'Residencial Maria Rosa',
+    name: 'Residencial Vista Alegre',
     address: 'R. Maria Rosa',
-    area: 'Xm²',
+    area: '47m²',
     rooms: 1,
     bathrooms: 1,
     bedrooms: 1,
@@ -711,7 +711,7 @@ const granja_residencial = {
 const studio_vertentes = {
   banner: {
     image: StudioVertentes17,
-    name: 'Studio Vertentes',
+    name: 'Studios Vertentes',
     description: 'Invista ou more em uma das regiões que mais crescem na Zona Oeste de São Paulo.',
     localization: 'Butantã',
     status: 'Pronto para morar',
@@ -866,19 +866,19 @@ const residencial_gardenias = {
   `,
 };
 
-const residencial_jasmins = {
+const residencial_das_flores = {
   banner: {
     image: ResidencialJasmins01,
-    name: 'Residencial Jasmins',
-    description: 'Residencial Jasmins',
-    localization: 'Residencial Jasmins',
+    name: 'Residencial das Flores',
+    description: 'Residencial das Flores',
+    localization: 'Residencial das Flores',
     status: 'Em construção',
   },
 
-  about: ['Residencial Jasmins'],
+  about: ['Residencial das Flores'],
 
   tags: {
-    area: '24m²',
+    area: '47m²',
     bathroom: '1',
     bedrooms: '1',
     garage: '1',
@@ -912,19 +912,19 @@ const residencial_jasmins = {
   `,
 };
 
-const residencial_maria_rosa = {
+const residencial_vista_alegre = {
   banner: {
     image: ResidencialMariaRosa01,
-    name: 'Residencial Maria Rosa',
-    description: 'Residencial Maria Rosa',
-    localization: 'Residencial Maria Rosa',
+    name: 'Residencial Vista Alegre',
+    description: 'Residencial Vista Alegre',
+    localization: 'Residencial Vista Alegre',
     status: 'Em construção',
   },
 
-  about: ['Residencial Maria Rosa'],
+  about: ['Residencial Vista Alegre'],
 
   tags: {
-    area: '24m²',
+    area: '47m²',
     bathroom: '1',
     bedrooms: '1',
     garage: '1',
@@ -964,8 +964,8 @@ const details = {
   studio_vertentes: studio_vertentes,
   residencial_vista_alegre_iii: residencial_vista_alegre_iii,
   residencial_gardenias: residencial_gardenias,
-  residencial_jasmins: residencial_jasmins,
-  residencial_maria_rosa: residencial_maria_rosa,
+  residencial_das_flores: residencial_das_flores,
+  residencial_vista_alegre: residencial_vista_alegre,
 };
 
 export { readyProperties, underConstructionProperties, details };

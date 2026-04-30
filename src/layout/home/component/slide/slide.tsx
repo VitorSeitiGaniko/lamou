@@ -3,7 +3,7 @@ import { Banner01, Banner01Planta } from '../../../../assets';
 
 const Slide = () => {
   return (
-    <div className='flex h-[calc(100vh-144px)] lg:h-[calc(100vh-132px)]'>
+    <div className='flex relative h-[calc(100vh-144px)] lg:h-[calc(100vh-132px)]'>
       <div className='hidden lg:block w-2/3 relative'>
         <img src={Banner01} alt='' />
         <div className='absolute bottom-0 w-full bg-[#000000]/40 flex items-center justify-between py-6 px-5'>
@@ -22,6 +22,10 @@ const Slide = () => {
 
       <div className='hidden lg:block bg-[#8A684B]/60 px-20 py-16 w-1/3'>
         <img src={Banner01Planta} alt='' />
+      </div>
+
+      <div className='absolute top-18 -left-26 px-28 rotate-340 text-white text-xl font-bold py-2 bg-amber-300/80'>
+        <span>Poucas unidades restantes - garanta a sua agora!</span>
       </div>
 
       <div className='lg:hidden relative'>
