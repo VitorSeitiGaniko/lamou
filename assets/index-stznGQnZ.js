@@ -140,7 +140,7 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
       referrerPolicy='no-referrer-when-downgrade'
       style="width: 100%; height: 100%;"
     ></iframe>
-  `},Fx={banner:{image:Of,name:"Residencial das Flores",description:"Residencial das Flores",localization:"R. das Camélias, 355 - Parque Assuncao Taboão da Serra - SP",status:"Em construção"},about:["Residencial das Flores"],tags:{area:"47m²",bathroom:"1",bedrooms:"1",garage:"1",kitchen:"1",living_room:"1",lote:"47m²",rooms:"1",type:"Studio"},images:[Of,VS,GS,FS,IS],plant:[],benefities:["Salão de festas","Academia","Churrasqueira"],map:`
+  `},Fx={banner:{image:Of,name:"Residencial das Flores",description:"Residencial das Flores",localization:"Taboão da Serra",status:"Em construção"},about:["Residencial das Flores"],tags:{area:"47m²",bathroom:"1",bedrooms:"1",garage:"1",kitchen:"1",living_room:"1",lote:"47m²",rooms:"1",type:"Studio"},images:[Of,VS,GS,FS,IS],plant:[],benefities:["Salão de festas","Academia","Churrasqueira"],map:`
     <iframe
       src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0173399779133!2d-46.76165138867455!3d-23.60371106306162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce543b05866471%3A0x1382ab34fa63593e!2sR.%20das%20Cam%C3%A9lias%2C%20355%20-%20Parque%20Assuncao%2C%20Tabo%C3%A3o%20da%20Serra%20-%20SP%2C%2006754-110!5e0!3m2!1spt-BR!2sbr!4v1777303147816!5m2!1spt-BR!2sbr'
       allowFullScreen={true}
@@ -148,7 +148,7 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
       referrerPolicy='no-referrer-when-downgrade'
       style="width: 100%; height: 100%;"
     ></iframe>
-  `},Ix={banner:{image:Mf,name:"Residencial Vista Alegre",description:"Residencial Vista Alegre",localization:"R. João Domingues, 200 - Jardim Maria Rosa Taboão da Serra - SP",status:"Em construção"},about:["Residencial Vista Alegre"],tags:{area:"47m²",bathroom:"1",bedrooms:"1",garage:"1",kitchen:"1",living_room:"1",lote:"47m²",rooms:"1",type:"Studio"},images:[Mf],plant:[],benefities:["Salão de festas","Academia","Piscina","Churrasqueira"],map:`
+  `},Ix={banner:{image:Mf,name:"Residencial Vista Alegre",description:"Residencial Vista Alegre",localization:"Taboão da Serra",status:"Em construção"},about:["Residencial Vista Alegre"],tags:{area:"47m²",bathroom:"1",bedrooms:"1",garage:"1",kitchen:"1",living_room:"1",lote:"47m²",rooms:"1",type:"Studio"},images:[Mf],plant:[],benefities:["Salão de festas","Academia","Piscina","Churrasqueira"],map:`
     <iframe
       src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.7198665993633!2d-46.76464658867425!3d-23.614377563454383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce54169aa40249%3A0x81c5ea81353a66a5!2sR.%20Jo%C3%A3o%20Domingues%2C%20200%20-%20Jardim%20Maria%20Rosa%2C%20Tabo%C3%A3o%20da%20Serra%20-%20SP%2C%2006763-310!5e0!3m2!1spt-BR!2sbr!4v1777303071991!5m2!1spt-BR!2sbr'
       allowFullScreen={true}
