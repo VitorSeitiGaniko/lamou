@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import { Footer, Header, WhatsAppLink } from './component';
-import { AboutUsPage, DetailsPage, HomePage, ListingPage, MaterialUI } from './page';
+import { AboutUsPage, DetailsPage, HomePage, ListingPage, MaterialUI, Terms } from './page';
 
 function AppContent() {
   const location = useLocation();
@@ -27,6 +27,7 @@ function AppContent() {
         <Route path='/material' element={<MaterialUI />} />
         <Route path='/aboutUs' element={<AboutUsPage />} />
         <Route path='/listing/:id' element={<ListingPage />} />
+        <Route path='/terms' element={<Terms />} />
       </Routes>
 
       <Footer />

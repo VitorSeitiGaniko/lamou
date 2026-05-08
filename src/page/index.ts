@@ -3,3 +3,4 @@ export * from './detailPage';
 export * from './materialUI';
 export * from './aboutUsPage';
 export * from './listingPage';
+export * from './terms';
