@@ -871,7 +871,7 @@ const residencial_das_flores = {
     image: ResidencialJasmins01,
     name: 'Residencial das Flores',
     description: 'Residencial das Flores',
-    localization: 'R. das Camélias, 355 - Parque Assuncao Taboão da Serra - SP',
+    localization: 'Taboão da Serra',
     status: 'Em construção',
   },
 
@@ -917,7 +917,7 @@ const residencial_vista_alegre = {
     image: ResidencialMariaRosa01,
     name: 'Residencial Vista Alegre',
     description: 'Residencial Vista Alegre',
-    localization: 'R. João Domingues, 200 - Jardim Maria Rosa Taboão da Serra - SP',
+    localization: 'Taboão da Serra',
     status: 'Em construção',
   },
 
