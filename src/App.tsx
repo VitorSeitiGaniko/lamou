@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
-import { Footer, Header, WhatsAppLink } from './component';
+import { Cookies, Footer, Header, WhatsAppLink } from './component';
 import { AboutUsPage, DetailsPage, HomePage, ListingPage, MaterialUI, Terms } from './page';
 
 function AppContent() {
@@ -30,6 +30,7 @@ function AppContent() {
         <Route path='/terms' element={<Terms />} />
       </Routes>
 
+      <Cookies />
       <Footer />
     </>
   );
