@@ -25,8 +25,7 @@ const Footer = () => {
 
       <div className=''>
         <ul className='text-xl text-center lg:text-2xl'>
-          <li>Seg à Sex: 11 4146-9775</li>
-          <li>Sáb e Dom: 11 93249-9852</li>
+          <li>(11) 92080-8659</li>
           <li>vendas@lamou.com.br</li>
         </ul>
       </div>
