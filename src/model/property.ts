@@ -195,7 +195,7 @@ const underConstructionProperties = [
   {
     image: ResidencialJasmins01,
     name: 'Residencial das Flores',
-    address: 'R. Jasmins',
+    address: 'R. das Camélias, 355 - Parque Assuncao Taboão da Serra - SP',
     area: '47m²',
     rooms: 1,
     bathrooms: 1,
@@ -206,7 +206,7 @@ const underConstructionProperties = [
   {
     image: ResidencialMariaRosa01,
     name: 'Residencial Vista Alegre',
-    address: 'R. Maria Rosa',
+    address: 'R. João Domingues, 200 - Jardim Maria Rosa Taboão da Serra - SP',
     area: '47m²',
     rooms: 1,
     bathrooms: 1,
@@ -871,7 +871,7 @@ const residencial_das_flores = {
     image: ResidencialJasmins01,
     name: 'Residencial das Flores',
     description: 'Residencial das Flores',
-    localization: 'Residencial das Flores',
+    localization: 'R. das Camélias, 355 - Parque Assuncao Taboão da Serra - SP',
     status: 'Em construção',
   },
 
@@ -917,7 +917,7 @@ const residencial_vista_alegre = {
     image: ResidencialMariaRosa01,
     name: 'Residencial Vista Alegre',
     description: 'Residencial Vista Alegre',
-    localization: 'Residencial Vista Alegre',
+    localization: 'R. João Domingues, 200 - Jardim Maria Rosa Taboão da Serra - SP',
     status: 'Em construção',
   },
 

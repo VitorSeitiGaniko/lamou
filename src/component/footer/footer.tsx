@@ -6,9 +6,15 @@ const Footer = () => {
       <div>
         <h2 className='text-xl lg:text-2xl'>Nossas redes sociais</h2>
         <div className='flex gap-6 mt-4'>
-          <img src={Facebook} alt='' />
-          <img src={Instagram} alt='' />
-          <img src={WhatsApp} alt='' />
+          <a href={'https://www.facebook.com/lamouempreendimentos/'} target='blank'>
+            <img src={Facebook} alt='' />
+          </a>
+          <a href={'https://www.instagram.com/construtora.mg/'} target='blank'>
+            <img src={Instagram} alt='' />
+          </a>
+          <a href={'https://wa.me/11920808659'} target='blank'>
+            <img src={WhatsApp} alt='' />
+          </a>
         </div>
       </div>
 

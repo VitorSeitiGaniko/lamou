@@ -15,7 +15,7 @@ function AppContent() {
   const match = location.pathname.match(/^\/details\/([^/]+)/);
   const detailsId = match ? match[1] : null;
 
-  const whatsappLink = detailsId && phones[detailsId] ? phones[detailsId] : 'https://wa.me/11988998899';
+  const whatsappLink = detailsId && phones[detailsId] ? phones[detailsId] : 'https://wa.me/11920808659';
 
   return (
     <>
